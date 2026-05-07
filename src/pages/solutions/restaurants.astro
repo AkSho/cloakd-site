@@ -1,0 +1,281 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Rodent Control for Restaurants NYC & NJ | Cloakd"
+  description="A single rodent sighting is a critical DOHMH violation. The 90-day fertility management program that puts consistent distance between your kitchen and that outcome."
+  path="/solutions/restaurants"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Restaurants &amp; Food Service
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        Paid for pest control last month.<br />
+        Whether you pass the next inspection depends on the timing.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl mb-10">
+        One rat sighting during an inspection is a critical violation — 5 points
+        minimum, up to $2,000 in fines, and a B in your window. If that visit
+        falls in week six after your last treatment, the new colony is already
+        rebuilding. The 90-day program closes that window.
+      </p>
+      <a
+        href="/get-started"
+        class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+      >
+        Start the 90-day program
+      </a>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE INSPECTION MATH ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What a violation actually costs
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        One sighting. One inspection. The math gets bad fast.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        NYC DOHMH conducts unannounced inspections. You do not get to prepare
+        for the visit. You either have the problem under control or you don't.
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {[
+          {
+            value: '5+',
+            unit: 'points',
+            label: 'minimum per rodent violation',
+            sub: 'Codes 04K (rats) and 04L (mice) are critical violations under NYC DOHMH',
+            color: '#c96a3a',
+          },
+          {
+            value: '14',
+            unit: 'points',
+            label: 'is all it takes for a B grade',
+            sub: 'One rodent violation combined with any other critical puts a B in your window',
+            color: '#c96a3a',
+          },
+          {
+            value: '$2,000',
+            unit: 'max',
+            label: 'fine per rodent violation',
+            sub: 'NYC rodent violations carry fines from $300 to $2,000 per citation',
+            color: '#c96a3a',
+          },
+          {
+            value: '$50K',
+            unit: 'lost',
+            label: 'revenue from one closure',
+            sub: 'A temporary closure in NYC costs $15,000 to $50,000 in lost revenue',
+            color: '#c96a3a',
+          },
+        ].map(({ value, unit, label, sub, color }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <div class="flex items-baseline gap-1 mb-3">
+              <span class="text-4xl font-bold" style={`color:${color}`}>{value}</span>
+              <span class="text-base font-semibold text-[#1c1814]/55">{unit}</span>
+            </div>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6 max-w-2xl">
+        <p class="text-base text-[#1c1814]/70 leading-relaxed">
+          NJ restaurants face equivalent exposure under state health code. The
+          inspection system differs from NYC's letter grading, but the financial
+          consequences of a rodent citation — remediation costs, reinspection
+          fees, and reputational damage — are comparable.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHY IT KEEPS HAPPENING ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            The real problem
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            Your exterminator treats what's there. The problem is what moves in after they leave.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            Standard treatment removes the colony that's present. The kitchen
+            goes clean. The vendor leaves. Within 4 to 8 weeks, surrounding
+            rats detect the empty territory and a new group moves in. The food
+            source hasn't changed. The entry points haven't changed. The cycle
+            resets before your next scheduled visit.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            For a restaurant, this means every inspection is a timing game.
+            If the inspector arrives in week two after a treatment, you're
+            fine. Week six, you're exposed. There's no version of standard
+            pest control that removes that variable.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            { week: 'Week 1–2', status: 'clean', label: 'Treatment complete. Active population removed. Clean kitchen.' },
+            { week: 'Week 3–4', status: 'watch', label: 'Territory sits empty. Surrounding colonies detect vacancy.' },
+            { week: 'Week 5–6', status: 'risk', label: 'New group moves in. Population rebuilding at full fertility.' },
+            { week: 'Week 7–8', status: 'risk', label: 'New colony established. Back to the same baseline.' },
+            { week: 'Week 9+', status: 'reset', label: 'Next treatment visit. Cycle resets. Same problem, same cost.' },
+          ].map(({ week, status, label }) => (
+            <div class="flex gap-4 items-start">
+              <div class={`flex-shrink-0 px-3 py-1 rounded-full text-xs font-semibold ${
+                status === 'clean'
+                  ? 'bg-[#7aab7e]/15 text-[#5e9263]'
+                  : status === 'watch'
+                  ? 'bg-[#d4a843]/15 text-[#c09530]'
+                  : 'bg-[#c96a3a]/15 text-[#b85530]'
+              }`}>
+                {week}
+              </div>
+              <p class="text-base text-[#1c1814]/70 leading-relaxed pt-0.5">{label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── HOW THE PROGRAM WORKS ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        How it works for restaurants
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Two layers. Your existing vendor stays in place.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        We don't replace your current pest control setup. We add a fertility
+        management layer on top of it, addressing what knockdown alone cannot.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#d4a843] bg-[#d4a843]/10 px-3 py-1 rounded-full">Phase 1</span>
+            <span class="text-sm text-[#1c1814]/55">Handled by your existing vendor</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Remove what's there</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-6">
+            Your current pest control vendor handles immediate knockdown. We
+            coordinate directly with them to establish a clean baseline before
+            Phase 2 begins. No contract changes, no displacement.
+          </p>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed">
+            Produces the visible evidence — dead rodents removed, entry points
+            assessed — that satisfies an inspector and your staff.
+          </p>
+        </div>
+
+        <div class="bg-white border border-[#7aab7e]/25 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#7aab7e] bg-[#7aab7e]/10 px-3 py-1 rounded-full">Phase 2</span>
+            <span class="text-sm text-[#1c1814]/55">Cloakd — fertility management</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Stop the replacement colony</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-6">
+            Evolve bait stations are placed in back-of-house, storage areas,
+            and along known travel paths. Evolve is derived from cottonseed
+            and carries EPA minimum risk designation — cleared for use in
+            food-handling environments. Rats that consume it reproduce at a
+            fraction of their normal rate, and over a single breeding cycle the
+            replacement population can't form at full size.
+          </p>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed">
+            No secondary kill risk to staff, customers, or wildlife. Safe for
+            continuous deployment in active kitchens.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-[#e8e0d0] rounded-xl p-6 border border-[#1c1814]/5">
+        <p class="text-lg text-[#1c1814]/70 leading-relaxed">
+          Phase 1 removes the current population while Phase 2 prevents the
+          next colony from forming at full capacity. Over 90 days, documented
+          track counts show the population declining rather than cycling. That
+          documentation goes with you into any inspection.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── PROOF ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Field data
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-16 max-w-2xl">
+        Numbers from monitored urban deployments
+      </h2>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-12">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — 5-month urban field study, Aug 2025 to Jan 2026', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density at the same site', sub: 'Tracks per monitoring plate declined even where rodents were still present', color: '#7aab7e' },
+          { value: '90%', label: 'fertility reduction potential', sub: 'When Evolve is integrated into an active pest management program', color: '#c96a3a' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-[#f0ebe0] rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-base text-[#1c1814]/60 max-w-xl leading-relaxed">
+        Field studies across two independent urban deployment sites. At the
+        city level: NYC began deploying ContraPest in rat mitigation zones
+        in April 2025. Baltimore adopted Evolve for its city rodent control
+        program the same year.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          Start before the next inspection.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          The program takes 90 days to produce documented results. The sooner
+          it starts, the more distance you have before the inspector walks in.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/how-it-works"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            How it works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

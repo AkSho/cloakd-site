@@ -1,0 +1,309 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="DOHMH Rodent Violation NYC: Codes 04K and 04L Explained | Cloakd"
+  description="What codes 04K and 04L mean, how many points they carry, what the fines are, and what you need to show the inspector to close the violation and keep it closed."
+  path="/dohmh-rodent-violation-nyc"
+>
+
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a DOHMH rodent violation in NYC?",
+        "acceptedAnswer": { "@type": "Answer", "text": "NYC DOHMH issues rodent violations under codes 04K (rats) and 04L (mice) when an inspector finds evidence of live or dead rodents, droppings, gnaw marks, burrows, or rodent activity in a food service establishment. Both are critical violations carrying a minimum of 5 points each. At 14 points, a restaurant receives a B grade. Critical violations can also result in fines of $300 to $2,000 per citation." }
+      },
+      {
+        "@type": "Question",
+        "name": "How many points is a rodent violation in NYC?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Codes 04K (rats) and 04L (mice) are critical violations, each carrying a minimum of 5 points. A single rodent violation combined with another critical finding can push a restaurant past 14 points, resulting in a B grade. Multiple rodent violations in the same inspection compound the score further." }
+      },
+      {
+        "@type": "Question",
+        "name": "What do DOHMH inspectors look for during a rodent inspection?",
+        "acceptedAnswer": { "@type": "Answer", "text": "DOHMH inspectors look for active rat signs: live or dead rodents, fresh droppings, gnaw marks on food packaging or structural materials, burrows near the building exterior, and evidence of nesting. Finding any of these results in an immediate critical violation. Inspectors also check for conditions that attract rodents: food stored off the floor, sealed waste containers, sealed entry points." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the fine for a rodent violation in NYC?",
+        "acceptedAnswer": { "@type": "Answer", "text": "NYC rodent violations carry fines from $300 to $2,000 per citation. Fines are set at OATH hearings. Restaurants can sometimes settle violations before a hearing at a reduced amount by admitting to the violation. Repeat violations in the same inspection cycle are treated as a pattern and typically result in higher fines and more frequent follow-up inspections." }
+      }
+    ]
+  }</script>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        DOHMH rodent violations NYC
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        You got a rodent violation.<br />
+        Here's what it means and what actually closes it.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl">
+        Codes 04K and 04L are critical violations — each worth at least 5
+        points, fines up to $2,000, and a B in your window if you hit 14
+        points combined. Standard treatment clears the violation this cycle.
+        It doesn't stop the same citation from appearing at the next unannounced
+        visit. Here's what changes that math.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE VIOLATION BREAKDOWN ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What the codes mean
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Codes 04K and 04L: critical violations, immediate points, fines at OATH.
+      </h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {[
+          {
+            code: '04K',
+            label: 'Rats — live or evidence',
+            body: 'Live rats, dead rats, fresh droppings, gnaw marks, burrows, or active rat signs in food or non-food areas.',
+            color: '#c96a3a',
+          },
+          {
+            code: '04L',
+            label: 'Mice — live or evidence',
+            body: 'Same standard for mice. Evidence of live mice or mouse activity in food handling or storage areas.',
+            color: '#c96a3a',
+          },
+          {
+            code: '5+',
+            label: 'points minimum per critical',
+            body: 'Each critical violation adds a minimum of 5 points to your inspection score. Multiple critical findings compound.',
+            color: '#c96a3a',
+          },
+          {
+            code: '14',
+            label: 'points = B grade',
+            body: 'A B letter grade in your window. One rodent violation plus any other critical puts most restaurants past that threshold.',
+            color: '#c96a3a',
+          },
+        ].map(({ code, label, body, color }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <p class="text-4xl font-bold mb-3" style={`color:${color}`}>{code}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{body}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+          <h3 class="text-base font-semibold text-[#1c1814] mb-3">Fine amounts</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed">
+            Rodent violations carry fines from $300 to $2,000 per citation,
+            set at an OATH hearing. You can settle before the hearing by
+            admitting to the violation, typically at a reduced amount.
+            Repeat violations within a short period are treated as a pattern
+            and typically carry higher fines and increased inspection frequency.
+          </p>
+        </div>
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+          <h3 class="text-base font-semibold text-[#1c1814] mb-3">How inspections are triggered</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed">
+            DOHMH conducts unannounced inspections on a cycle based on
+            your current grade. A 311 rodent complaint can also trigger
+            an out-of-cycle visit. You cannot prepare for the inspection
+            date — you either have the problem under control or you don't
+            when they walk in.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHAT INSPECTORS LOOK FOR ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What triggers the citation
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Inspectors don't need to see a live rat. Evidence is enough.
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div class="space-y-6">
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            An inspector who finds fresh droppings, gnaw marks on packaging,
+            burrows near the exterior, or any sign of active rodent movement
+            will issue a critical violation. Live rodents are the most serious
+            finding, but evidence of recent activity is sufficient.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            The timing problem: standard treatment clears the active colony.
+            Within four to eight weeks, a new group moves in from the
+            surrounding block. If the inspector arrives during week two
+            after your treatment, you're clean. Week six, you're exposed
+            to the same violation again.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            There's no version of standard pest control that removes that
+            variable. The inspection cycle and the replacement cycle run
+            on similar timelines. What changes the math is reducing how
+            fast the replacement population forms.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-lg font-bold text-[#1c1814] mb-4">Active rat signs that trigger 04K</h3>
+          {[
+            { sign: 'Live rats', detail: 'Anywhere in the premises — kitchen, storage, dining, or non-food areas.' },
+            { sign: 'Dead rats', detail: 'Found during the inspection. Evidence of prior activity even if currently inactive.' },
+            { sign: 'Fresh droppings', detail: 'Along baseboards, in storage areas, near food or waste. Fresh droppings indicate recent activity.' },
+            { sign: 'Gnaw marks', detail: 'On food packaging, structural wood, or utility penetrations. Signs of active feeding.' },
+            { sign: 'Burrows', detail: 'Exterior burrow holes near building foundation or trash storage areas.' },
+            { sign: 'Grease marks', detail: 'Smear marks along walls or pipes from repeated rat travel along the same path.' },
+          ].map(({ sign, detail }) => (
+            <div class="flex gap-4 items-start">
+              <div class="flex-shrink-0 px-3 py-1 rounded-full text-xs font-semibold bg-[#c96a3a]/10 text-[#b85530]">
+                {sign}
+              </div>
+              <p class="text-base text-[#1c1814]/65 leading-relaxed pt-0.5">{detail}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHAT CLOSES IT LONG-TERM ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What changes the outcome
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Closing the violation is different from closing the vulnerability.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        Treatment closes the violation by clearing the active population.
+        It doesn't reduce how fast the replacement forms. Inspectors
+        increasingly want to see active management documentation, not
+        just a service receipt.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+          <h3 class="text-xl font-bold text-[#1c1814] mb-4">What standard treatment gives you</h3>
+          <div class="space-y-3">
+            {[
+              'Cleared active population at the time of treatment',
+              'Service receipt documenting the visit',
+              'Licensed exterminator compliance documentation',
+              '4 to 8 weeks before replacement pressure builds back',
+            ].map((item) => (
+              <div class="flex items-start gap-3">
+                <div class="w-1.5 h-1.5 rounded-full bg-[#1c1814]/30 flex-shrink-0 mt-2"></div>
+                <p class="text-base text-[#1c1814]/65 leading-relaxed">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#7aab7e]/25 rounded-xl p-8">
+          <h3 class="text-xl font-bold text-[#1c1814] mb-4">What the 90-day program adds</h3>
+          <div class="space-y-3">
+            {[
+              'Documented declining trend — not just point-in-time treatment',
+              'Monthly track count comparisons against Week 1 baseline',
+              'Population that decreases rather than cycling back',
+              'A record that shows active, continuous, measured management',
+              'Your existing vendor stays — this adds a layer, not a replacement',
+            ].map((item) => (
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-[#7aab7e]/15 flex-shrink-0 flex items-center justify-center mt-0.5">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#5e9263" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p class="text-base text-[#1c1814]/70 leading-relaxed">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#e8e0d0] rounded-xl p-6 border border-[#1c1814]/5 max-w-2xl">
+        <p class="text-base text-[#1c1814]/70 leading-relaxed">
+          A 90-day record showing declining track counts is a different
+          conversation with an inspector than "we called the exterminator
+          last month." It shows the problem is trending down, not just
+          treated and waiting to return.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── FIELD DATA ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Field data
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-16 max-w-2xl">
+        What a two-phase managed program produces over 90 days.
+      </h2>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-8">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — 5-month urban field study, Aug 2025 to Jan 2026', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density at the same site', sub: 'Tracks per monitoring plate declined even where some activity remained', color: '#7aab7e' },
+          { value: '90%', label: 'fertility reduction potential', sub: 'When Evolve runs alongside an active pest control program', color: '#c96a3a' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-[#f0ebe0] rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-sm text-[#1c1814]/40 max-w-2xl">
+        Source: <a href="https://www.prnewswire.com/news-releases/senestech-reports-significant-reductions-in-rodent-activity-following-evolve-deployments-in-urban-field-studies-302691116.html" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-[#1c1814]/65 transition-colors">SenesTech, Inc. — February 18, 2026</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          Start before the next unannounced visit.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          The 90-day program takes time to produce a documented trend.
+          The sooner it starts, the more distance you have between your
+          kitchen and the next inspection.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/solutions/restaurants"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            Restaurants and DOHMH compliance
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

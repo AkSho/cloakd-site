@@ -1,0 +1,376 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="NJ Rodent Violation: Health Code Citations for Restaurants and Properties | Cloakd"
+  description="New Jersey doesn't use NYC's letter grade system, but a rodent citation triggers reinspection, remediation costs, and a public record. What the exposure looks like — and what closes it."
+  path="/nj-rodent-violation"
+>
+
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What happens when a NJ restaurant gets a rodent violation?",
+        "acceptedAnswer": { "@type": "Answer", "text": "New Jersey food service inspections are conducted by local municipal health departments under the NJ State Sanitary Code. A rodent finding is classified as an imminent hazard or significant violation requiring immediate corrective action and a follow-up reinspection. Unlike NYC's letter grade system, NJ doesn't post grades in windows — but inspection reports are public record, citations require documented remediation, and repeat violations trigger increased inspection frequency and potential closure orders." }
+      },
+      {
+        "@type": "Question",
+        "name": "Who conducts food service inspections in New Jersey?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In New Jersey, food service inspections are conducted by local municipal health departments, not a single state agency. Each municipality handles its own enforcement under the NJ State Sanitary Code Part IV. This means the specific process and enforcement culture varies by town and county, but the underlying health code standard for rodent violations is consistent statewide." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can a NJ restaurant be closed for a rodent problem?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. A NJ health inspector who finds an imminent hazard — which includes evidence of active rodent infestation — has authority to issue a closure order until the condition is remediated and a passing reinspection is completed. Reinspection fees are charged to the operator. A closure at a NJ restaurant during service hours carries the same financial exposure as in NYC: lost revenue, staff costs, and reputational damage." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do NJ property managers have rodent control obligations?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. NJ landlords are required to maintain residential and commercial properties free from pest infestation under municipal housing codes and the NJ Landlord-Tenant Act. A tenant rodent complaint routes to the local health department or housing authority, triggering an inspection. Violations require documented remediation and follow-up confirmation. Persistent complaints create a record that affects code enforcement status and potential tenant legal action." }
+      }
+    ]
+  }</script>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        NJ rodent violations
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        No letter grade in the window.<br />
+        The exposure is still real.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl">
+        New Jersey food service and property operators don't face NYC's
+        letter grade system, but a rodent citation from a local health
+        department triggers reinspection, remediation costs, and a
+        public record attached to the address. The replacement cycle
+        that keeps the violation coming back is the same. Here's what
+        the exposure looks like in NJ — and what breaks the cycle.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── HOW NJ ENFORCEMENT WORKS ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        How NJ enforcement works
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Local health departments. State sanitary code. No central agency to appeal to.
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div class="space-y-6">
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            NJ food service inspections run through local municipal health
+            departments, not a single centralized agency like NYC's DOHMH.
+            Every municipality enforces under the NJ State Sanitary Code
+            Part IV, but the specific process, reinspection timeline, and
+            enforcement culture varies by county and town.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            What doesn't vary: a rodent finding is treated as a significant
+            violation or imminent hazard requiring immediate corrective action
+            and a documented follow-up. The absence of a letter grade system
+            doesn't reduce the financial or operational exposure — it just
+            means the consequences come through a different channel.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Inspection reports in NJ are public record. For a restaurant
+            operator, a pattern of rodent citations attached to your address
+            is visible to prospective customers, future landlords, and
+            insurance carriers even without a B in the window.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            {
+              title: 'Inspection trigger',
+              body: 'NJ health departments conduct both routine scheduled inspections and complaint-driven visits. A tenant complaint, customer 311-equivalent report, or anonymous tip can trigger an out-of-cycle inspection at any time.',
+            },
+            {
+              title: 'Violation classification',
+              body: 'Rodent evidence — droppings, gnaw marks, live or dead rodents, burrows — is typically classified as a significant or imminent hazard violation under NJ code. Imminent hazard findings can result in immediate suspension of the food service permit.',
+            },
+            {
+              title: 'Reinspection requirement',
+              body: 'After a violation, the operator must document corrective action and pass a reinspection before the case is closed. Reinspection fees are charged to the operator. Failing the reinspection restarts the clock and adds to the citation record.',
+            },
+            {
+              title: 'Public record',
+              body: 'NJ inspection results are reported to the state and accessible through local health department records requests. There\'s no letter grade to post, but the violation history is there for anyone who asks.',
+            },
+          ].map(({ title, body }) => (
+            <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+              <h3 class="text-base font-semibold text-[#1c1814] mb-2">{title}</h3>
+              <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── RESTAURANTS ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            NJ restaurants
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            Closure authority without the grade system warning.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            NYC restaurants get a letter grade posted publicly — which
+            creates visible pressure before a closure. NJ doesn't work
+            that way. A NJ health inspector who finds active rodent signs
+            can suspend your food service permit on the spot and require
+            you to close until a passing reinspection is completed.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            The financial math is the same: a mid-service closure costs
+            $15,000 to $50,000 in lost revenue depending on volume, plus
+            reinspection fees, remediation costs, and the staff disruption
+            of an unplanned shutdown. It's just triggered differently.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            The underlying problem — the replacement colony forming between
+            treatment visits — is identical to what NYC operators face.
+            Dense urban and suburban NJ blocks have the same pressure
+            dynamics. Treatment clears. The cycle resets.
+          </p>
+        </div>
+
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            NJ property managers
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            Tenant complaints route to local health. The record follows the address.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            NJ landlords are required to maintain properties free of rodent
+            infestation under the NJ Landlord-Tenant Act and municipal
+            housing codes. A tenant complaint routes to the local health
+            department or housing authority, triggering an inspection.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Unlike NYC's HPD violation system — which logs everything
+            publicly by address — NJ doesn't have a single searchable
+            database. But violations require documented remediation,
+            create a code enforcement record, and can support tenant
+            rent escrow claims and legal action in housing court if
+            the problem isn't resolved. For property managers with
+            multiple NJ addresses, the exposure compounds when the
+            treatment cycle just keeps resetting.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── NJ vs NYC ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        NJ vs NYC enforcement
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        Different systems. Same underlying problem.
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+          <p class="text-sm font-semibold uppercase tracking-widest text-[#1c1814]/55 mb-6">New York City</p>
+          <div class="space-y-4">
+            {[
+              { label: 'Single centralized agency (DOHMH)', yes: true },
+              { label: 'Public letter grade posted in window', yes: true },
+              { label: 'Specific violation codes (04K/04L)', yes: true },
+              { label: 'Fines $300–$2,000 per citation', yes: true },
+              { label: 'HPD housing violations logged publicly by address', yes: true },
+              { label: '311 complaint triggers immediate inspection', yes: true },
+            ].map(({ label, yes }) => (
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center bg-[#1c1814]/8">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#5e9263" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p class="text-base text-[#1c1814]/70">{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+          <p class="text-sm font-semibold uppercase tracking-widest text-[#1c1814]/55 mb-6">New Jersey</p>
+          <div class="space-y-4">
+            {[
+              { label: 'Municipal health departments (varies by town)' },
+              { label: 'No letter grade — but inspection reports are public record' },
+              { label: 'NJ State Sanitary Code Part IV governs food safety' },
+              { label: 'Reinspection fees + remediation costs on the operator' },
+              { label: 'Permit suspension authority for imminent hazard findings' },
+              { label: 'Tenant complaints route to local health or housing authority' },
+            ].map(({ label }) => (
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center bg-[#1c1814]/8">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#5e9263" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p class="text-base text-[#1c1814]/70">{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-[#e8e0d0] rounded-xl p-6 border border-[#1c1814]/5 max-w-2xl">
+        <p class="text-base text-[#1c1814]/70 leading-relaxed">
+          The structural problem is the same in both states. Treatment clears
+          the colony. Within four to eight weeks, rats from the surrounding
+          block fill the same territory. The next inspection — whether it's
+          DOHMH or a NJ municipal health officer — finds active signs again.
+          Reducing the replacement rate is what breaks that cycle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE PROGRAM ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        The program for NJ operators
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Same two-phase structure. Your existing NJ vendor stays.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        The 90-day program works the same way in NJ as in NYC. Phase 1
+        runs through your existing exterminator — whoever handles
+        compliance documentation for your local health department.
+        Phase 2 adds the fertility management layer on top.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#d4a843] bg-[#d4a843]/10 px-3 py-1 rounded-full">Phase 1</span>
+            <span class="text-sm text-[#1c1814]/55">Your existing NJ exterminator</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Treatment and documentation</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-4">
+            Your current exterminator handles treatment and generates
+            the compliance documentation your local health department
+            requires. We coordinate with them to get a documented clean
+            baseline before Phase 2 starts. No vendor change.
+          </p>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed">
+            Satisfies the remediation record requirement for reinspection
+            and produces the paper trail that closes the current violation.
+          </p>
+        </div>
+
+        <div class="bg-white border border-[#7aab7e]/25 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#7aab7e] bg-[#7aab7e]/10 px-3 py-1 rounded-full">Phase 2</span>
+            <span class="text-sm text-[#1c1814]/55">Cloakd — fertility management</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Stop the replacement from forming</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-4">
+            Evolve bait stations go in along travel paths, near entry
+            points, and around the property perimeter. Made from
+            cottonseed — EPA minimum risk, no special permit required,
+            cleared for food-handling environments and occupied residential
+            buildings. Rats that consume it reproduce significantly less.
+          </p>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed">
+            Monthly track counts document declining activity over 90 days.
+            That record goes into any reinspection or complaint response.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-[#f0ebe0] rounded-xl p-6 border border-[#1c1814]/5">
+        <p class="text-lg text-[#1c1814]/70 leading-relaxed">
+          The 90-day monitoring record — track counts per location, monthly
+          comparisons against baseline, documented declining trend — is
+          the difference between "we treated it last month" and "here's
+          the data showing the population has been declining for three
+          months." In NJ as in NYC, active management documentation
+          changes the conversation with a health officer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── FIELD DATA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Field data
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-16 max-w-2xl">
+        Numbers from monitored urban deployments.
+      </h2>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-8">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — 5-month urban field study, Aug 2025 to Jan 2026', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density at the same site', sub: 'Tracks per monitoring plate declined even where some activity remained', color: '#7aab7e' },
+          { value: '90%', label: 'fertility reduction potential', sub: 'When Evolve runs alongside an active pest control program', color: '#c96a3a' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-sm text-[#1c1814]/40 max-w-2xl">
+        Source: <a href="https://www.prnewswire.com/news-releases/senestech-reports-significant-reductions-in-rodent-activity-following-evolve-deployments-in-urban-field-studies-302691116.html" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-[#1c1814]/65 transition-colors">SenesTech, Inc. — February 18, 2026</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          NJ operators: tell us about your property.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          We work with restaurants, property managers, and building operators
+          across NJ. Tell us your situation and we'll put together a program
+          outline including Phase 1 coordination with your existing vendor.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/how-it-works"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            How it works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

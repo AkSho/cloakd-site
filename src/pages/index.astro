@@ -1,0 +1,332 @@
+---
+import Base from '../layouts/Base.astro';
+import Stats from '../components/ui/Stats';
+import CycleLoop from '../components/ui/CycleLoop';
+---
+
+<Base
+  title="Stop Rodents From Coming Back | Cloakd"
+  description="NYC and NJ rodent fertility management. Standard extermination removes the active population. Within 6 to 8 weeks, the next colony fills the same territory. 79% reduction in 5 months."
+  path="/"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="min-h-[92vh] flex flex-col justify-center px-6 pt-12 pb-24 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        NYC &amp; NJ Rodent Management
+      </p>
+
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        Every six weeks, the rodents are back.<br />
+        The 90-day program that ends it.
+      </h1>
+
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl mb-10">
+        Standard treatment clears the colony, and within weeks the territory
+        fills again. Adding fertility management to the same program reduces
+        the replacement rate until that cycle breaks.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a
+          href="/get-started"
+          class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+        >
+          Start the 90-day program
+        </a>
+        <a
+          href="/why-it-keeps-coming-back"
+          class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/50 transition-colors"
+        >
+          Why it keeps happening
+        </a>
+      </div>
+    </div>
+
+    <!-- Proof strip -->
+    <div class="mt-16 pt-8 border-t border-[#1c1814]/5 flex flex-wrap gap-8">
+      {[
+        { value: '79%', label: 'reduction in rodent activity, 5-month urban field study' },
+        { value: '88%', label: 'drop in track density at monitored locations' },
+        { value: '90%', label: 'fertility reduction when integrated into active programs' },
+      ].map(({ value, label }) => (
+        <div class="flex flex-col gap-1">
+          <span class="text-3xl font-bold text-[#7aab7e]">{value}</span>
+          <span class="text-base text-[#1c1814]/60 max-w-[200px] leading-snug">{label}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE CYCLE ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        The real problem
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        This is what your current program does every month
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        Poison removes the active population, and it does that reliably. The
+        question is what happens to that territory in the weeks after it empties.
+      </p>
+
+      <!-- Cycle diagram -->
+      <CycleLoop client:load />
+
+      <p class="mt-12 text-[#1c1814]/60 text-base max-w-2xl leading-relaxed">
+        Empty territory in a food-rich urban block is the most attractive signal
+        a rat can detect. Surrounding colonies move in within weeks at full
+        breeding capacity. Monthly extermination services that symptom without
+        addressing what creates it.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CHAIN OF REASONING ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-10">
+          Follow this through
+        </p>
+
+        <div class="space-y-10">
+          {[
+            'When a colony is removed from a food-dense urban block, surrounding rats detect the vacant territory. A new group moves in within 4 to 8 weeks.',
+            'The incoming population breeds at full fertility. One breeding pair becomes a new colony before your next scheduled treatment visit.',
+            'At $400 to $600 per visit, you are paying monthly to return to the same baseline you started from. The number does not go down.',
+            'Add a fertility management layer to the same program and rats that consume the bait reproduce at a fraction of their normal rate. The replacement rate drops over a single breeding cycle.',
+            'When the population cannot rebuild itself at the rate it is being removed, it shrinks. The territory empties and stays empty.',
+          ].map((text, i) => (
+            <div class="flex gap-6">
+              <div class="flex flex-col items-center">
+                <div class="w-px h-4 bg-[#f2ede3]/10"></div>
+                <div class="w-8 h-8 rounded-full border border-[#1c1814]/15 flex items-center justify-center text-xs text-[#1c1814]/55 font-mono flex-shrink-0">
+                  {i + 1}
+                </div>
+                <div class="w-px flex-1 bg-[#f2ede3]/10"></div>
+              </div>
+              <div class="pb-4 pt-1">
+                <p class="text-[#1c1814]/90 text-lg leading-relaxed">{text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── 2-PHASE SYSTEM ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        How it works
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Two things have to happen for this to end
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        Neither one works without the other.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Phase 1 -->
+        <div class="bg-white border border-[#1c1814]/5 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#d4a843] bg-[#d4a843]/10 px-3 py-1 rounded-full">
+              Phase 1
+            </span>
+            <span class="text-xs text-[#1c1814]/55">Immediate control</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Handle what's there now</h3>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed mb-6">
+            Initial knockdown removes the population that is currently present
+            and gives Phase 2 a clean baseline to work from. Your existing pest
+            control vendor handles this layer, and we coordinate directly with them.
+          </p>
+          <p class="text-base text-[#1c1814]/55">
+            Immediate visible results. The dead rat evidence your health inspector and your staff need to see.
+          </p>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="bg-white border border-[#7aab7e]/20 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#7aab7e] bg-[#7aab7e]/10 px-3 py-1 rounded-full">
+              Phase 2
+            </span>
+            <span class="text-xs text-[#1c1814]/55">Population management</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Stop what comes next</h3>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed mb-6">
+            Evolve is a soft bait derived from cottonseed. Rats that consume it
+            reproduce at a fraction of their normal rate, males and females both,
+            and over a single breeding cycle the replacement population can't
+            form at full size. The colony shrinks on its own.
+          </p>
+          <p class="text-base text-[#1c1814]/55">
+            EPA-designated minimum risk. Derived from plant compounds, with no secondary kill risk to pets or wildlife. Cleared for use in food-handling environments.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 p-6 bg-[#e8e0d0] rounded-xl border border-[#1c1814]/5">
+        <p class="text-lg text-[#1c1814]/70 leading-relaxed">
+          Phase 1 removes the current population while Phase 2 prevents the
+          next colony from forming at full capacity. Over 90 days, the cycle
+          breaks. In field studies across two urban locations, this produced
+          a 79% reduction in monitored rodent activity within 5 months.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── PROOF ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Field data
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-16 max-w-2xl">
+        Real numbers from monitored deployments
+      </h2>
+
+      <Stats client:visible />
+
+      <!-- Cities -->
+      <div class="mt-20">
+        <p class="text-sm text-[#1c1814]/55 uppercase tracking-widest font-semibold mb-8">
+          Cities already running this
+        </p>
+        <div class="flex flex-wrap gap-8 items-center">
+          {['New York City', 'Baltimore', 'Chicago'].map((city) => (
+            <div class="flex items-center gap-3">
+              <div class="w-2 h-2 rounded-full bg-[#7aab7e]"></div>
+              <span class="text-[#1c1814]/60 font-medium">{city}</span>
+            </div>
+          ))}
+        </div>
+        <p class="mt-4 text-base text-[#1c1814]/55 max-w-lg leading-relaxed">
+          NYC began deploying ContraPest in designated rat mitigation zones in April 2025.
+          Baltimore adopted Evolve for its city rodent control program in 2025. Chicago's Wicker Park
+          corridor reported early positive results in March 2026.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHO IT'S FOR ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Who we work with
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-16 max-w-2xl">
+        Built for operators who cannot afford another violation
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {[
+          {
+            href: '/solutions/restaurants',
+            tag: 'Restaurants',
+            headline: 'One rodent sighting is a critical violation',
+            body: 'In NYC, violation code 04K or 04L lands you at 5+ points minimum. Combined with anything else and you\'re posting a B in the window. One temporary closure can cost $15,000 to $50,000 in lost revenue. NJ restaurants face equivalent exposure under state health code. You already pay $300 to $600 a month for pest control. It keeps coming back anyway.',
+            stat: '$300-$2,000',
+            statLabel: 'per rodent violation, NYC and NJ',
+          },
+          {
+            href: '/solutions/property-managers',
+            tag: 'Property Managers',
+            headline: 'Tenant complaints do not stop until the population does',
+            body: 'One sale is one building. One building is 20 to 80 units. You manage multiple properties, which means recurring rodent complaints across multiple addresses. Your current exterminator resets the cycle every 6 weeks. We break it across every building you manage.',
+            stat: 'Multi-building',
+            statLabel: 'one program, every address',
+          },
+          {
+            href: '/solutions/ghost-kitchens',
+            tag: 'Ghost Kitchens',
+            headline: 'High-density buildings with no existing pest control contract',
+            body: 'Ghost kitchens operate in older urban buildings with constant food product cycling. Most do not have locked-in pest control contracts. Decision makers are accessible and the downside of a rodent problem in a shared kitchen facility is severe for every operator in the building.',
+            stat: 'No lock-in',
+            statLabel: 'no existing vendor to displace',
+          },
+        ].map(({ href, tag, headline, body, stat, statLabel }) => (
+          <a
+            href={href}
+            class="group bg-white border border-[#1c1814]/5 hover:border-[#c96a3a]/30 rounded-xl p-8 transition-colors flex flex-col"
+          >
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#c96a3a] mb-4">
+              {tag}
+            </span>
+            <h3 class="text-xl font-bold text-[#1c1814] leading-snug mb-4">{headline}</h3>
+            <p class="text-[#1c1814]/65 leading-relaxed text-base flex-1">{body}</p>
+            <div class="mt-6 pt-6 border-t border-[#1c1814]/5">
+              <p class="text-2xl font-bold text-[#7aab7e]">{stat}</p>
+              <p class="text-sm text-[#1c1814]/55 mt-1">{statLabel}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        {[
+          { href: '/solutions/food-storage',  label: 'Food Storage &amp; Cold Chain' },
+          { href: '/solutions/residential',   label: 'Residential Properties' },
+          { href: '/solutions/hoas',           label: 'HOAs &amp; Co-ops' },
+        ].map(({ href, label }) => (
+          <a
+            href={href}
+            class="flex items-center justify-between px-6 py-4 bg-white border border-[#1c1814]/5 hover:border-[#1c1814]/15 rounded-xl text-[#1c1814]/65 hover:text-[#1c1814] transition-colors"
+          >
+            <span class="text-base font-medium" set:html={label}></span>
+            <svg class="w-4 h-4 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="bg-[#e8e0d0] border border-[#1c1814]/5 rounded-2xl p-10 md:p-16 flex flex-col md:flex-row gap-12 items-start">
+        <div class="flex-1">
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            Start the 90-day program
+          </h2>
+          <p class="text-lg text-[#1c1814]/55 leading-relaxed mb-4">
+            The first visit covers setup, with monthly management and documented
+            reporting running from there. The numbers are yours to show any
+            regulator or property owner who asks.
+          </p>
+          <p class="text-[#1c1814]/60 text-base leading-relaxed">
+            Serving food service operators and property managers across NYC and
+            NJ, month-to-month, with results documented every cycle.
+          </p>
+        </div>
+
+        <div class="flex-shrink-0 flex flex-col gap-4 w-full md:w-auto">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors whitespace-nowrap"
+          >
+            Get started
+          </a>
+          <a
+            href="/results"
+            class="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-lg border border-[#1c1814]/15 text-[#1c1814]/60 hover:text-[#1c1814] hover:border-[#1c1814]/50 transition-colors whitespace-nowrap"
+          >
+            See the results
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

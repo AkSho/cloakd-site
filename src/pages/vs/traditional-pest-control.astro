@@ -1,0 +1,260 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Traditional Pest Control vs. Fertility Management | Cloakd"
+  description="Standard treatment clears the colony every cycle. The replacement colony forms just as reliably. Here's the gap — and how the 90-day program fills it."
+  path="/vs/traditional-pest-control"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Traditional Pest Control vs. Fertility Management
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        Your exterminator is doing their job.<br />
+        The rats keep coming back anyway.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl mb-10">
+        Standard treatment removes the rats that are there. It has no way
+        to reduce how fast new ones fill the space after each visit. That's
+        not a vendor problem. It's a missing layer — and the 90-day program
+        adds it on top of whatever you already have.
+      </p>
+      <a
+        href="/get-started"
+        class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+      >
+        Start the 90-day program
+      </a>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHERE TRADITIONAL WORKS ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What traditional pest control does well
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        It clears the active colony and produces the compliance record.
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div class="space-y-6">
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            A licensed exterminator brings the training, products, and
+            inspection documentation to clear an active infestation. They
+            find entry points, assess travel paths, treat the active colony,
+            and leave a paper trail. For a restaurant, property manager, or
+            building owner, that documentation is the first line of compliance.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Traditional pest control isn't broken. For isolated or newer
+            infestations, it produces consistent control. The limitation shows
+            up in dense urban areas where new rats from the surrounding block
+            continuously fill back in after treatment.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            { label: 'Licensed and insured', body: 'Exterminators carry the licensing, chemical certifications, and liability insurance required for commercial treatment.' },
+            { label: 'Compliance documentation', body: 'Treatment records from a licensed exterminator satisfy health department requirements and provide the paper trail inspectors recognize.' },
+            { label: 'Entry point assessment', body: 'Experienced technicians find structural gaps and entry points that building owners miss.' },
+            { label: 'Works with your existing vendor', body: 'Most properties already have an exterminator. The 90-day program is designed to run alongside them, not replace them.' },
+          ].map(({ label, body }) => (
+            <div class="flex gap-4">
+              <div class="w-5 h-5 rounded-full bg-[#7aab7e]/15 flex-shrink-0 flex items-center justify-center mt-0.5">
+                <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#5e9263" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div>
+                <p class="text-base font-semibold text-[#1c1814] mb-1">{label}</p>
+                <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE GAP ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            The gap standard treatment leaves
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            Treatment removes the colony. Nothing slows down the replacement.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            When treatment clears a colony, it opens up the territory. The
+            scent markers that kept other rats away fade within days. Rats
+            from the same block detect the vacancy and start moving in.
+            The same food source, the same building, the same block pressure.
+            The new group arrives within four to eight weeks.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            This is not the exterminator's fault. The industry standard is
+            treatment on a scheduled visit cycle. That schedule exists because
+            the biology produces a predictable cycle. Monthly visits aligned
+            with a four to six week replacement timeline keep the problem
+            managed. They don't reduce it.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            { week: 'Treatment visit', status: 'clean', label: 'Exterminator treats the active colony. Documentation issued. Clean site.' },
+            { week: 'Week 2–3', status: 'watch', label: 'Territory sits empty. Surrounding rats start detecting the vacancy.' },
+            { week: 'Week 4–5', status: 'risk', label: 'New group moves in. Breeding starts at full rate.' },
+            { week: 'Week 6–8', status: 'risk', label: 'Colony re-established. Population rebuilding toward baseline.' },
+            { week: 'Next visit', status: 'reset', label: 'Exterminator returns. Removes the replacement colony. Resets.' },
+          ].map(({ week, status, label }) => (
+            <div class="flex gap-4 items-start">
+              <div class={`flex-shrink-0 px-3 py-1 rounded-full text-xs font-semibold ${
+                status === 'clean'
+                  ? 'bg-[#7aab7e]/15 text-[#5e9263]'
+                  : status === 'watch'
+                  ? 'bg-[#d4a843]/15 text-[#c09530]'
+                  : 'bg-[#c96a3a]/15 text-[#b85530]'
+              }`}>
+                {week}
+              </div>
+              <p class="text-base text-[#1c1814]/70 leading-relaxed pt-0.5">{label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── HOW THEY WORK TOGETHER ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        How they work together
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Your exterminator stays. We add what their treatment can't do.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        Cloakd doesn't replace your pest control vendor. Phase 1 of the
+        program is your existing exterminator doing what they already do.
+        Phase 2 adds Evolve fertility management on top — reducing how fast
+        the replacement colony forms after each treatment.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#c96a3a] bg-[#c96a3a]/10 px-3 py-1 rounded-full">What it adds</span>
+          </div>
+          <div class="space-y-4">
+            {[
+              'Reduced reproduction rate between treatment visits',
+              'Population that declines instead of cycling',
+              '90-day documented activity decline',
+              'Active management record for inspectors',
+              'No change to your existing vendor or contract',
+            ].map((item) => (
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-[#7aab7e]/15 flex-shrink-0 flex items-center justify-center mt-0.5">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#5e9263" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p class="text-base text-[#1c1814]/70 leading-relaxed">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#1c1814]/45 bg-[#1c1814]/5 px-3 py-1 rounded-full">What doesn't change</span>
+          </div>
+          <div class="space-y-4">
+            {[
+              'Your existing pest control vendor and contract',
+              'Treatment schedule and visit frequency',
+              'Compliance documentation from your licensed exterminator',
+              'Entry point assessment and structural recommendations',
+              'Your vendor relationship and pricing',
+            ].map((item) => (
+              <div class="flex items-start gap-3">
+                <div class="w-1.5 h-1.5 rounded-full bg-[#1c1814]/30 flex-shrink-0 mt-2.5"></div>
+                <p class="text-base text-[#1c1814]/65 leading-relaxed">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── PROOF ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-12">
+        Field data
+      </p>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-10">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — 5-month urban field study, Aug 2025 to Jan 2026', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density at the same site', sub: 'Tracks per monitoring plate declined even where rodents were still present', color: '#7aab7e' },
+          { value: '90%', label: 'fertility reduction potential', sub: 'When Evolve runs alongside an active pest control program', color: '#c96a3a' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-[#f0ebe0] rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-base text-[#1c1814]/60 max-w-xl leading-relaxed">
+        NYC began deploying ContraPest in designated rat mitigation zones
+        in April 2025. Baltimore adopted Evolve for citywide pest management
+        the same year. It works at the building level for the same reason
+        it works at city scale.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          Your exterminator keeps their contract.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          Tell us about your property and who handles pest control now.
+          We'll coordinate Phase 1 with your existing vendor and run the
+          fertility management layer for 90 days.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/how-it-works"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            How it works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

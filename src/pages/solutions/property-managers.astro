@@ -1,0 +1,329 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Rodent Control for Property Managers NYC & NJ | Cloakd"
+  description="Treating each building separately keeps the cycle running. The fertility management program that breaks it across every address you manage."
+  path="/solutions/property-managers"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Property Managers
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        Treated building four in March.<br />
+        By June, building seven was calling.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl mb-10">
+        Treating one address creates open territory that the surrounding
+        block fills. Sometimes that pressure moves into the building next
+        door — which you also manage. The 90-day program reduces how many
+        rats fill back in across every address, not just the one that
+        complained last.
+      </p>
+      <a
+        href="/get-started"
+        class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+      >
+        Start the 90-day program
+      </a>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE REACTIVE MATH ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What reactive treatment actually costs
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        You're paying per building. The problem doesn't stay per building.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        Reactive treatment works as a single-building expense when the problem
+        is isolated to one building. Once it cycles across multiple
+        buildings, the math changes.
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {[
+          {
+            value: '6–8',
+            unit: 'visits/yr',
+            label: 'per building on a standard schedule',
+            sub: 'Typical commercial pest control contract: monthly or bi-monthly service visits per address',
+            color: '#c96a3a',
+          },
+          {
+            value: '4–8',
+            unit: 'weeks',
+            label: 'before replacement colony forms',
+            sub: 'Empty urban territory fills from surrounding blocks within a single treatment cycle',
+            color: '#c96a3a',
+          },
+          {
+            value: 'Class B',
+            unit: 'violation',
+            label: 'NYC HPD rodent condition',
+            sub: 'Each 311 complaint triggers an HPD inspection. A pattern of open violations compounds enforcement risk',
+            color: '#c96a3a',
+          },
+          {
+            value: '311',
+            unit: 'logged',
+            label: 'every tenant complaint on record',
+            sub: 'NYC open data tracks rodent complaints by address. Repeat complaints follow the building',
+            color: '#c96a3a',
+          },
+        ].map(({ value, unit, label, sub, color }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <div class="flex items-baseline gap-1 mb-3">
+              <span class="text-4xl font-bold" style={`color:${color}`}>{value}</span>
+              <span class="text-base font-semibold text-[#1c1814]/55">{unit}</span>
+            </div>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6 max-w-2xl">
+        <p class="text-base text-[#1c1814]/70 leading-relaxed">
+          NJ property managers face equivalent exposure under municipal
+          health codes. Tenant complaints route to local health departments,
+          and a complaint creates a record that persists even after treatment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHY IT HOPS BUILDINGS ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            Why treating one building creates pressure on the next
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            When you treat one building, the surrounding population detects the empty territory.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            When a treatment clears a building, it creates open territory
+            in a dense urban block. Rats from surrounding buildings —
+            including other properties you manage — detect the vacancy and
+            start filling it. The treatment you paid for in building four
+            effectively pulls the problem toward building seven.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            When you manage multiple buildings and treat each one
+            separately, there's always an active complaint somewhere
+            in the rotation. The buildings share the same block pressure.
+            Treating them one at a time keeps that pressure moving,
+            not declining.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            { label: 'Building treated', status: 'clean', body: 'Active population removed. Building clears the next inspection.' },
+            { label: 'Territory empties', status: 'watch', body: 'Surrounding rats detect the open space. Pressure starts shifting.' },
+            { label: 'Adjacent building gets pressure', status: 'risk', body: 'Tenant complaint filed next door. 311 logged. Inspection scheduled.' },
+            { label: 'Second treatment paid for', status: 'risk', body: 'The first building is already rebuilding. Cycle now runs across both addresses.' },
+            { label: 'Cycle repeats, doesn\'t resolve', status: 'reset', body: 'Active complaint moves building to building. Spend accumulates. Problem doesn\'t decline.' },
+          ].map(({ label, status, body }) => (
+            <div class="flex gap-4 items-start">
+              <div class={`flex-shrink-0 px-3 py-1 rounded-full text-xs font-semibold ${
+                status === 'clean'
+                  ? 'bg-[#7aab7e]/15 text-[#5e9263]'
+                  : status === 'watch'
+                  ? 'bg-[#d4a843]/15 text-[#c09530]'
+                  : 'bg-[#c96a3a]/15 text-[#b85530]'
+              }`}>
+                {label}
+              </div>
+              <p class="text-base text-[#1c1814]/70 leading-relaxed pt-0.5">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── HOW THE PROGRAM WORKS ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        How it works for property managers
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        One program across every address. Your existing vendors stay.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        We layer fertility management on top of whatever pest control is
+        already running at each building. Your per-building vendor contracts
+        don't change. Every address gets a single coordinating layer
+        that addresses what individual treatments can't.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#d4a843] bg-[#d4a843]/10 px-3 py-1 rounded-full">Phase 1</span>
+            <span class="text-sm text-[#1c1814]/55">Your existing vendors</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Knockdown at each address</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-6">
+            Your per-building exterminators handle treatment. We coordinate
+            with them to get a clean documented baseline at each address
+            before the fertility management starts. No contract disruption,
+            no new vendor relationships required.
+          </p>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed">
+            Produces the treatment records and compliance documentation for
+            HPD and municipal health requirements.
+          </p>
+        </div>
+
+        <div class="bg-white border border-[#7aab7e]/25 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#7aab7e] bg-[#7aab7e]/10 px-3 py-1 rounded-full">Phase 2</span>
+            <span class="text-sm text-[#1c1814]/55">Cloakd — fertility layer across every address</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Slow the replacement across every address</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-6">
+            Evolve bait stations go into common areas, utility corridors,
+            exterior perimeters, and known rat travel paths at each property.
+            Evolve is made from cottonseed — EPA minimum risk, cleared for
+            residential and mixed-use buildings. Rats that consume it have
+            significantly fewer pups. The replacement population can't form
+            at full size.
+          </p>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed">
+            No secondary kill risk. Safe for continuous deployment in
+            occupied buildings.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-[#e8e0d0] rounded-xl p-6 border border-[#1c1814]/5">
+        <p class="text-lg text-[#1c1814]/70 leading-relaxed">
+          Monthly reports document track count activity per address across
+          every building in the program. That shows a declining trend over
+          90 days — which is the record you want in front of a housing
+          inspector or a tenant attorney.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── COMPLIANCE ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            The compliance layer
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            Documentation that holds up in an inspection.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+            Inspectors aren't just looking for the absence of rats. They want
+            evidence of active management. A 90-day record showing declining
+            track counts is a different conversation than "we called the
+            exterminator last month."
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Every address gets a monitoring record. If a complaint comes
+            in, you have a paper trail showing consistent, proactive
+            management — not a reactive call made after a 311 report.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            {
+              title: 'NYC HPD',
+              body: 'Class B violations for rodent conditions. Each 311 complaint triggers an inspection and creates a logged record attached to the building. Repeat violations are treated differently than isolated incidents.',
+            },
+            {
+              title: 'NYC DOHMH',
+              body: 'Restaurants and food businesses in the building face additional exposure under DOHMH codes 04K and 04L — critical violations with fines up to $2,000 per citation.',
+            },
+            {
+              title: 'New Jersey',
+              body: 'NJ municipal health departments conduct complaint-driven and scheduled inspections under state housing and health codes. Rodent citations carry remediation costs, reinspection fees, and tenant legal exposure.',
+            },
+          ].map(({ title, body }) => (
+            <div class="border border-[#1c1814]/8 rounded-xl p-6">
+              <p class="text-base font-semibold text-[#1c1814] mb-2">{title}</p>
+              <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── PROOF ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Field data
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-16 max-w-2xl">
+        Numbers from monitored urban deployments.
+      </h2>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-12">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — 5-month urban field study, Aug 2025 to Jan 2026', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density at the same site', sub: 'Tracks per monitoring plate declined even where rodents were still present', color: '#7aab7e' },
+          { value: '90%', label: 'fertility reduction potential', sub: 'When Evolve runs alongside an active pest control program', color: '#c96a3a' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          Stop managing the complaint rotation.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          Tell us how many buildings you manage and where the active
+          pressure is. We'll put together a program outline covering
+          Phase 1 coordination and a 90-day monitoring schedule.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/how-it-works"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            How it works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

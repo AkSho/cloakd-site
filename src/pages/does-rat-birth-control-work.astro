@@ -1,0 +1,299 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Does Rat Birth Control Work? NYC Deployment Data | Cloakd"
+  description="NYC's Bryant Park pilot failed. Two independent urban building deployments showed 79% reduction over 5 months. What made the difference — and what it means for your property."
+  path="/does-rat-birth-control-work"
+>
+
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does rat birth control work?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends on how it's deployed. Standalone outdoor deployments without a Phase 1 knockdown have failed — including NYC's Bryant Park pilot, which used liquid ContraPest in an open space with competing food attractants and no prior population reduction. Two-phase managed programs in urban buildings — Phase 1 knockdown followed by Evolve fertility management with monthly track count monitoring — have produced 79% reduction in rodent track presence over five months in independent urban deployments." }
+      },
+      {
+        "@type": "Question",
+        "name": "Why did NYC's rat birth control pilot fail?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The Bryant Park pilot used liquid ContraPest in an outdoor open space without containerized trash. Rats had abundant competing food sources, so they weren't consuming the bait at the concentration needed to affect reproduction. The failure was structural: wrong formulation, wrong environment, no Phase 1 knockdown, no monitoring. It's the same failure mode seen in other standalone deployments. The mechanism isn't what failed. The deployment structure failed." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between ContraPest and Evolve?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Both are made by SenesTech and target rat fertility. ContraPest is a liquid formulation. Evolve is a solid soft bait made from cottonseed, EPA minimum risk (25b classification). Evolve is easier to deploy in managed bait stations, doesn't require liquid delivery infrastructure, and is better suited to urban building deployments. NYC's current 2025 program uses ContraPest pellets in designated rat mitigation zones; Baltimore and Chicago have used Evolve in city programs." }
+      }
+    ]
+  }</script>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Does rat birth control work?
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        NYC tried it in Bryant Park.<br />
+        It failed. Here's why — and what's different.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl">
+        The Gothamist headline was accurate: the Bryant Park pilot didn't work.
+        The same mechanism deployed in two independent urban buildings over
+        five months produced 79% reduction in rodent track presence. The
+        mechanism isn't what failed. The deployment structure failed.
+        Here's exactly what the difference is.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHAT FAILED AND WHY ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Why Bryant Park failed
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        The deployment structure was wrong before the bait went in.
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div class="space-y-6">
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            The Bryant Park pilot used liquid ContraPest in an open public
+            space. NYC rats have arguably the most abundant competing food
+            supply of any urban rat population on earth. Without containerized
+            trash and a prior knockdown reducing the existing population, the
+            rats had no reason to consume the bait at the concentration needed
+            to affect reproduction.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            This is the same failure pattern across every documented negative
+            result: standalone deployment, outdoor or open environment, active
+            population still present, competing attractants, no monitoring to
+            confirm the bait was even being consumed. In that structure, the
+            product can't do what it's designed to do.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            The mechanism — reducing reproductive output so the population
+            can't replace itself at the rate it's removed — is sound biology.
+            What it requires is a controlled enough environment for rats to
+            consume the bait consistently. A managed bait station program
+            inside an urban building, deployed after a knockdown phase, is
+            that environment.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            {
+              label: 'No Phase 1 knockdown',
+              body: 'The existing population was at full density when the bait went in. Fertility management is designed to stop the replacement colony from forming — not to reduce a population that\'s already established at baseline.',
+            },
+            {
+              label: 'Open outdoor environment',
+              body: 'Bryant Park is an open space with unrestricted food access from surrounding streets, trash, and visitor activity. Managed bait stations in enclosed urban buildings produce a fundamentally different consumption pattern.',
+            },
+            {
+              label: 'Competing attractants',
+              body: 'NYC rats had abundant alternatives to the bait. Without containerized waste, the bait competed with the city\'s normal food supply rather than being the primary available option.',
+            },
+            {
+              label: 'No monitoring',
+              body: 'Without track count monitoring, there was no way to confirm whether consumption was occurring at the levels needed, or to adjust placement and replenishment.',
+            },
+          ].map(({ label, body }) => (
+            <div class="border-l-2 border-[#c96a3a]/40 pl-4">
+              <h3 class="text-base font-semibold text-[#1c1814] mb-1">{label}</h3>
+              <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHAT THE DATA SHOWS ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What the field data shows
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Two independent urban building deployments. Five months. Both produced positive results.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        SenesTech published field results from two independent urban
+        deployments in February 2026. Both used Evolve in managed bait
+        stations, deployed after a Phase 1 knockdown, with monthly
+        track count monitoring.
+      </p>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-12">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — percentage of monitored stations showing zero activity by month 5', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density', sub: 'Location A — tracks per monitoring plate declined even at stations with residual activity', color: '#7aab7e' },
+          { value: '50%+', label: 'reduction in track presence', sub: 'Location B — independent urban site, same 5-month period, different site profile', color: '#7aab7e' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-[#f0ebe0] rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-[#f0ebe0] rounded-xl p-6 max-w-2xl">
+        <p class="text-base text-[#1c1814]/70 leading-relaxed">
+          Two independent sites producing positive outcomes over the same
+          period gives the data more weight than a single result. The
+          mechanism isn't site-specific. The biology is consistent across
+          urban environments — what matters is deployment structure.
+        </p>
+      </div>
+
+      <p class="text-sm text-[#1c1814]/40 mt-6 max-w-2xl">
+        Source: <a href="https://www.prnewswire.com/news-releases/senestech-reports-significant-reductions-in-rodent-activity-following-evolve-deployments-in-urban-field-studies-302691116.html" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-[#1c1814]/65 transition-colors">SenesTech, Inc. — February 18, 2026</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHAT MAKES IT WORK ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What makes deployment succeed
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        Four things that separate the programs that work from the ones that don't.
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        {[
+          {
+            step: '1',
+            label: 'Phase 1 knockdown first',
+            body: 'The fertility management layer starts from a documented clean baseline after a knockdown clears the active population. This is what gives the bait a role: stop the replacement from forming, not reduce what\'s already at full density.',
+          },
+          {
+            step: '2',
+            label: 'Managed bait stations',
+            body: 'Stations placed along confirmed travel paths and near entry points, checked and replenished monthly. Rats are creatures of habit — managed stations along their established routes produce reliable consumption. Scattered bait in an open environment doesn\'t.',
+          },
+          {
+            step: '3',
+            label: 'Urban enclosed environment',
+            body: 'A building or property perimeter limits competing food sources to a manageable level. An open city park or outdoor space with unrestricted food access is a structurally different problem.',
+          },
+          {
+            step: '4',
+            label: 'Monthly track count monitoring',
+            body: 'Tracking plates at each station confirm activity is declining month over month. Monitoring shows whether the program is working and documents the trend — which is also the record you hand to an inspector.',
+          },
+        ].map(({ step, label, body }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <div class="w-8 h-8 rounded-full bg-[#c96a3a]/10 text-[#c96a3a] text-sm font-bold flex items-center justify-center mb-4">{step}</div>
+            <h3 class="text-base font-semibold text-[#1c1814] mb-3">{label}</h3>
+            <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CONTRAPEST VS EVOLVE ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        ContraPest vs. Evolve
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Same maker. Different formulations. Different deployment contexts.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-12 leading-relaxed">
+        Both ContraPest and Evolve are made by SenesTech. The Bryant Park
+        pilot and NYC's current city program use ContraPest liquid. The
+        program Cloakd deploys uses Evolve solid soft bait.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-[#f0ebe0] rounded-xl p-8">
+          <h3 class="text-xl font-bold text-[#1c1814] mb-4">ContraPest (liquid)</h3>
+          <div class="space-y-3">
+            {[
+              'Liquid formulation requiring specialized dispensers',
+              'Used in Bryant Park pilot (failed) and NYC\'s current Harlem program',
+              'More susceptible to competing liquid attractants in open environments',
+              'Better suited to city-scale infrastructure programs',
+            ].map((item) => (
+              <div class="flex items-start gap-3">
+                <div class="w-1.5 h-1.5 rounded-full bg-[#1c1814]/30 flex-shrink-0 mt-2"></div>
+                <p class="text-base text-[#1c1814]/65">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#7aab7e]/25 rounded-xl p-8">
+          <h3 class="text-xl font-bold text-[#1c1814] mb-4">Evolve (solid soft bait)</h3>
+          <div class="space-y-3">
+            {[
+              'Solid soft bait made from cottonseed, EPA minimum risk (25b)',
+              'Deployed in standard bait stations along rat travel paths',
+              'Used in the two urban deployments that produced the 79%/88% data',
+              'Adopted by Baltimore for citywide rodent program (2025)',
+              'Available on consumer market — but deployment structure is what produces results',
+            ].map((item) => (
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 rounded-full bg-[#7aab7e]/15 flex-shrink-0 flex items-center justify-center mt-0.5">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#5e9263" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p class="text-base text-[#1c1814]/70">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          The structure is what makes it work.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          The 90-day program runs Phase 1 knockdown through your existing
+          exterminator, then deploys Evolve with monthly monitoring. Tell
+          us about your property and we'll put together the outline.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/results"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            See the field data
+          </a>
+          <a
+            href="/questions"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            More questions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

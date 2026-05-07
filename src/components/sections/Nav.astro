@@ -1,0 +1,105 @@
+---
+const links = [
+  { href: '/why-it-keeps-coming-back', label: 'The Problem' },
+  { href: '/how-it-works',             label: 'How It Works' },
+  { href: '/solutions/restaurants',    label: 'Restaurants' },
+  { href: '/results',                  label: 'Results' },
+  { href: '/questions',                label: 'FAQ' },
+  { href: '/blog',                     label: 'Resources' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-[#1c1814]/8 bg-[#faf8f4]/90 backdrop-blur-sm">
+  <div class="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="/" class="text-[#1c1814] font-bold text-lg tracking-tight hover:text-[#c96a3a] transition-colors">
+      Cloakd
+    </a>
+
+    <!-- Desktop nav links -->
+    <nav class="hidden md:flex items-center gap-8">
+      {links.map(({ href, label }) => (
+        <a
+          href={href}
+          class={`text-sm transition-colors ${
+            currentPath === href
+              ? 'text-[#1c1814]'
+              : 'text-[#1c1814]/65 hover:text-[#1c1814]'
+          }`}
+        >
+          {label}
+        </a>
+      ))}
+    </nav>
+
+    <!-- Desktop CTA -->
+    <a
+      href="/get-started"
+      class="hidden md:inline-flex items-center px-4 py-2 text-sm font-medium rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+    >
+      Get Started
+    </a>
+
+    <!-- Mobile hamburger -->
+    <button
+      id="mobile-menu-btn"
+      class="md:hidden text-[#1c1814]/70 hover:text-[#1c1814] p-1"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      <svg id="icon-open" width="22" height="22" viewBox="0 0 22 22" fill="none">
+        <path d="M3 7h16M3 11h16M3 15h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <svg id="icon-close" width="22" height="22" viewBox="0 0 22 22" fill="none" class="hidden">
+        <path d="M5 5l12 12M17 5L5 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile menu panel -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden border-t border-[#1c1814]/8 bg-[#faf8f4] px-6 py-6"
+  >
+    <nav class="flex flex-col gap-1 mb-6">
+      {links.map(({ href, label }) => (
+        <a
+          href={href}
+          class={`py-3 text-base font-medium border-b border-[#1c1814]/5 transition-colors ${
+            currentPath === href
+              ? 'text-[#1c1814]'
+              : 'text-[#1c1814]/65 hover:text-[#1c1814]'
+          }`}
+        >
+          {label}
+        </a>
+      ))}
+    </nav>
+    <a
+      href="/get-started"
+      class="inline-flex w-full items-center justify-center px-6 py-3 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+    >
+      Get Started
+    </a>
+  </div>
+</header>
+
+<!-- Spacer to offset fixed nav -->
+<div class="h-16"></div>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  btn?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+    menu?.classList.toggle('hidden', isOpen);
+    iconOpen?.classList.toggle('hidden', !isOpen);
+    iconClose?.classList.toggle('hidden', isOpen);
+    btn?.setAttribute('aria-expanded', String(!isOpen));
+  });
+</script>

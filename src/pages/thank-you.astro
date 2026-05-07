@@ -1,0 +1,49 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="We'll Be In Touch | Cloakd"
+  description="Your inquiry has been received. We'll review your property and respond within one business day."
+  path="/thank-you"
+>
+
+  <section class="min-h-[70vh] flex flex-col justify-center px-6 py-24 max-w-6xl mx-auto">
+    <div class="max-w-xl">
+      <div class="w-10 h-10 rounded-full bg-[#7aab7e]/15 flex items-center justify-center mb-8">
+        <svg width="20" height="16" viewBox="0 0 20 16" fill="none">
+          <path d="M1.5 8L7 13.5L18.5 2" stroke="#5e9263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Received
+      </p>
+      <h1 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+        We'll be in touch within one business day.
+      </h1>
+      <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-10">
+        We'll review your property details and put together a program outline
+        covering Phase 1 coordination and a 90-day monitoring schedule.
+        If the program isn't the right fit for your situation, we'll tell
+        you that too.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a
+          href="/how-it-works"
+          class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+        >
+          How the program works
+        </a>
+        <a
+          href="/results"
+          class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+        >
+          See the field data
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Base>

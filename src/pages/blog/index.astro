@@ -1,0 +1,174 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Resources | Cloakd — Rodent Control NYC & NJ"
+  description="Field data, mechanism explanations, and practical guides on urban rodent control in NYC and NJ. Everything from how the replacement cycle works to what DOHMH inspectors actually look for."
+  path="/blog"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Resources
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        How urban rodent control actually works.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl">
+        Field data, plain-language explanations, and compliance guides for
+        restaurants, property managers, and building operators in NYC and NJ.
+        Starting with the questions that matter most.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── FEATURED ── -->
+  <section class="pb-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-8">
+        Start here
+      </p>
+
+      <div class="grid lg:grid-cols-3 gap-6 mb-16">
+        <!-- Featured: Why it keeps coming back -->
+        <a href="/why-it-keeps-coming-back" class="group block bg-[#f0ebe0] rounded-2xl p-8 hover:bg-[#e8e0d0] transition-colors">
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#c96a3a] mb-4">Biology &amp; Mechanism</p>
+          <h2 class="text-2xl font-bold text-[#1c1814] leading-snug mb-4 group-hover:text-[#b85530] transition-colors">
+            Why rodents keep coming back after treatment
+          </h2>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-6">
+            The exterminator didn't fail. The biology of how rats claim
+            territory is what keeps the cycle running. Standard treatment
+            has no way to interrupt it. Here's what actually happens after
+            treatment ends, and what changes the outcome.
+          </p>
+          <span class="text-base font-semibold text-[#c96a3a]">Read the full explanation</span>
+        </a>
+
+        <!-- Featured: How it works -->
+        <a href="/how-it-works" class="group block bg-[#f0ebe0] rounded-2xl p-8 hover:bg-[#e8e0d0] transition-colors">
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#c96a3a] mb-4">Program Mechanics</p>
+          <h2 class="text-2xl font-bold text-[#1c1814] leading-snug mb-4 group-hover:text-[#b85530] transition-colors">
+            How the 90-day fertility management program works
+          </h2>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-6">
+            How Evolve changes the replacement math. The two-phase program
+            and what each phase does. How track count monitoring shows the
+            population is actually declining over 90 days.
+          </p>
+          <span class="text-base font-semibold text-[#c96a3a]">Read the program breakdown</span>
+        </a>
+
+        <!-- Featured: Questions -->
+        <a href="/questions" class="group block bg-[#f0ebe0] rounded-2xl p-8 hover:bg-[#e8e0d0] transition-colors">
+          <p class="text-xs font-semibold uppercase tracking-widest text-[#c96a3a] mb-4">Common Questions</p>
+          <h2 class="text-2xl font-bold text-[#1c1814] leading-snug mb-4 group-hover:text-[#b85530] transition-colors">
+            Your exterminator has probably seen this fail. Here's why.
+          </h2>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-6">
+            PCOs are skeptical of rat fertility management for a reason.
+            Most failed deployments share the same structure. Every
+            question we hear about whether this actually works, answered
+            directly.
+          </p>
+          <span class="text-base font-semibold text-[#c96a3a]">Read the full breakdown</span>
+        </a>
+      </div>
+
+      <!-- Topic grid -->
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-8">
+        By topic
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {[
+          {
+            href: '/results',
+            category: 'Field Data',
+            title: 'Numbers from monitored urban deployments',
+            body: '79% reduction in track presence. 88% drop in track density. Five months, two independent sites. The monitoring methodology and what the data shows.',
+          },
+          {
+            href: '/solutions/restaurants',
+            category: 'Restaurants',
+            title: 'DOHMH rodent violations: what the codes actually mean',
+            body: 'Codes 04K and 04L, critical violation points, the math on fines and temporary closure costs, and why every inspection is a timing game with standard treatment.',
+          },
+          {
+            href: '/solutions/property-managers',
+            category: 'Property Management',
+            title: 'Why treating one building increases pressure on the next',
+            body: 'Treating buildings one at a time keeps the problem moving across every address you manage. Here\'s why that happens and what actually stops it.',
+          },
+          {
+            href: '/solutions/ghost-kitchens',
+            category: 'Ghost Kitchens',
+            title: 'Shared food facilities and shared compliance exposure',
+            body: 'One rodent sighting in a ghost kitchen puts every brand operating under that roof at risk. Why shared food facilities are harder to protect.',
+          },
+          {
+            href: '/vs/traditional-pest-control',
+            category: 'Comparisons',
+            title: 'What standard pest control doesn\'t address',
+            body: 'Your pest control vendor is doing their job correctly. The cycle keeps running anyway. Here\'s what standard treatment can\'t fix and why.',
+          },
+          {
+            href: '/vs/rat-poison',
+            category: 'Comparisons',
+            title: 'Rat poison and the replacement cycle',
+            body: 'Poison kills what\'s there. The replacement colony forms just as reliably. NYC restrictions on the strongest rat poisons, and why the cycle runs regardless.',
+          },
+          {
+            href: '/does-rat-birth-control-work',
+            category: 'Research',
+            title: 'Does rat birth control work? NYC field data and deployment context',
+            body: 'NYC\'s Bryant Park pilot failed. Two independent urban building deployments showed 79% reduction over 5 months. What made the difference — and what it means for your property.',
+          },
+          {
+            href: '/dohmh-rodent-violation-nyc',
+            category: 'Compliance',
+            title: 'DOHMH rodent violation NYC: codes 04K and 04L explained',
+            body: 'What the violation codes mean, how many points they carry, what inspectors look for, and what actually closes the vulnerability — not just the current citation.',
+          },
+          {
+            href: '/nj-rodent-violation',
+            category: 'Compliance',
+            title: 'NJ rodent violations: how enforcement works without a letter grade',
+            body: 'NJ has no DOHMH equivalent. Municipal health departments enforce rodent violations under State Sanitary Code Part IV — permit suspension, imminent hazard classification, and fines up to $1,000/day.',
+          },
+        ].map(({ href, category, title, body }) => (
+          <a href={href} class="group block bg-white border border-[#1c1814]/8 rounded-xl p-6 hover:border-[#c96a3a]/30 transition-colors">
+            <p class="text-xs font-semibold uppercase tracking-widest text-[#c96a3a] mb-3">{category}</p>
+            <h3 class="text-base font-semibold text-[#1c1814] leading-snug mb-3 group-hover:text-[#b85530] transition-colors">{title}</h3>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{body}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          Ready to start the program?
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          NYC and NJ. Tell us about your property and current pest control
+          setup. First response within one business day.
+        </p>
+        <a
+          href="/get-started"
+          class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+        >
+          Start the 90-day program
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Base>

@@ -1,0 +1,80 @@
+---
+const solutions = [
+  { href: '/solutions/restaurants',        label: 'Restaurants' },
+  { href: '/solutions/ghost-kitchens',     label: 'Ghost Kitchens' },
+  { href: '/solutions/property-managers',  label: 'Property Managers' },
+  { href: '/solutions/food-storage',       label: 'Food Storage' },
+  { href: '/solutions/residential',        label: 'Residential' },
+  { href: '/solutions/hoas',               label: 'HOAs & Co-ops' },
+];
+
+const compare = [
+  { href: '/vs/rat-poison',               label: 'vs Rat Poison' },
+  { href: '/vs/traditional-pest-control', label: 'vs Traditional Pest Control' },
+  { href: '/vs/snap-traps',               label: 'vs Snap Traps' },
+];
+
+const company = [
+  { href: '/how-it-works',                label: 'How It Works' },
+  { href: '/results',                      label: 'Results' },
+  { href: '/why-it-keeps-coming-back',    label: 'Why It Keeps Coming Back' },
+  { href: '/questions',                    label: 'FAQ' },
+  { href: '/get-started',                  label: 'Get Started' },
+  { href: '/blog',                         label: 'Resources' },
+];
+---
+
+<footer class="border-t border-[#1c1814]/8 bg-[#f0ebe0] mt-24">
+  <div class="mx-auto max-w-6xl px-6 py-16">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
+      <!-- Brand -->
+      <div class="col-span-2 md:col-span-1">
+        <a href="/" class="text-[#1c1814] font-bold text-lg tracking-tight">Cloakd</a>
+        <p class="mt-3 text-sm text-[#1c1814]/60 leading-relaxed max-w-[200px]">
+          Rodent fertility management for NYC and NJ food service and property operators.
+        </p>
+      </div>
+
+      <!-- Solutions -->
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest text-[#1c1814]/55 mb-4">Solutions</p>
+        <ul class="space-y-2">
+          {solutions.map(({ href, label }) => (
+            <li>
+              <a href={href} class="text-sm text-[#1c1814]/65 hover:text-[#1c1814] transition-colors">{label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Compare -->
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest text-[#1c1814]/55 mb-4">Compare</p>
+        <ul class="space-y-2">
+          {compare.map(({ href, label }) => (
+            <li>
+              <a href={href} class="text-sm text-[#1c1814]/65 hover:text-[#1c1814] transition-colors">{label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-widest text-[#1c1814]/55 mb-4">Company</p>
+        <ul class="space-y-2">
+          {company.map(({ href, label }) => (
+            <li>
+              <a href={href} class="text-sm text-[#1c1814]/65 hover:text-[#1c1814] transition-colors">{label}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-[#1c1814]/8 flex flex-col sm:flex-row justify-between gap-4 text-xs text-[#1c1814]/25">
+      <p>&copy; {new Date().getFullYear()} Cloakd. All rights reserved.</p>
+      <p>Serving NYC and NJ. Results documented. Population reduction, not temporary killing.</p>
+    </div>
+  </div>
+</footer>

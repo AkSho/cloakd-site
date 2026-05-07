@@ -1,0 +1,287 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Field Results | Cloakd — 90-Day Rodent Program"
+  description="Five months. Two independent urban deployments. What the track count data actually showed."
+  path="/results"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Field data
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        Two buildings. Five months.<br />
+        Here's what happened to the rat population.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl">
+        Track counts from two independent urban sites — monthly comparisons
+        against a Week 1 baseline, August 2025 through January 2026.
+        What went down, by how much, and over what timeframe.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── PRIMARY STATS ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Location A — primary field study
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Urban deployment, Aug 2025 to Jan 2026.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        Five-month monitored deployment at a dense urban site. Track count
+        plates placed at 12 station locations. Monthly comparisons against
+        Week 1 baseline.
+      </p>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-12">
+        {[
+          {
+            value: '79%',
+            label: 'reduction in rodent track presence',
+            sub: 'Percentage of monitored station locations showing zero track activity by month 5, compared to full activity at baseline',
+            color: '#7aab7e',
+          },
+          {
+            value: '88%',
+            label: 'drop in track density',
+            sub: 'Average tracks per monitoring plate at active stations declined even where some residual activity was still detected',
+            color: '#7aab7e',
+          },
+          {
+            value: '5 months',
+            label: 'continuous monitoring period',
+            sub: 'Uninterrupted deployment from August 2025 through January 2026 with monthly check-in documentation',
+            color: '#c96a3a',
+          },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+            <p class="text-6xl font-bold mb-4" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-3">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-[#e8e0d0] rounded-xl p-6 border border-[#1c1814]/5 max-w-2xl">
+        <p class="text-base text-[#1c1814]/70 leading-relaxed">
+          The 79% and 88% figures measure different things. One counts
+          how many station locations went silent. The other counts how
+          many tracks were left at stations that were still active. Both
+          dropped. That's not one story told two ways. It's two independent
+          signs of the same decline.
+        </p>
+      </div>
+
+      <p class="text-sm text-[#1c1814]/40 mt-6 max-w-2xl">
+        Source: <a href="https://www.prnewswire.com/news-releases/senestech-reports-significant-reductions-in-rodent-activity-following-evolve-deployments-in-urban-field-studies-302691116.html" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-[#1c1814]/65 transition-colors">SenesTech, Inc. — February 18, 2026</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── LOCATION B + FERTILITY ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            Location B
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            Independent 5-month deployment.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            A second independent urban deployment ran concurrently over the
+            same five-month period. Location B showed a 50%+ reduction in
+            rodent track presence — a meaningful decline given a different
+            site profile, food source distribution, and surrounding block
+            pressure than Location A.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Two independent sites producing positive outcomes over the same
+            period gives the data more weight than a single-site result.
+            The mechanism isn't site-specific. The biology is consistent
+            across urban environments.
+          </p>
+
+          <div class="mt-8 bg-[#f0ebe0] rounded-xl p-6 space-y-6">
+            <div>
+              <p class="text-5xl font-bold text-[#7aab7e] mb-3">50%+</p>
+              <p class="text-base font-semibold text-[#1c1814] mb-2">reduction in track presence</p>
+              <p class="text-base text-[#1c1814]/60">Station locations showing zero track activity by month 5</p>
+            </div>
+            <div class="border-t border-[#1c1814]/8 pt-6">
+              <p class="text-5xl font-bold text-[#7aab7e] mb-3">71%</p>
+              <p class="text-base font-semibold text-[#1c1814] mb-2">drop in track density</p>
+              <p class="text-base text-[#1c1814]/60">Location B — independent 5-month urban deployment, same monitoring period</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            Fertility reduction
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            Up to 90% fertility reduction potential.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            The maker of Evolve tested how much it reduces rats' ability
+            to reproduce when used alongside active pest control. Their
+            data shows up to 90% fertility reduction. That's the mechanism
+            that prevents the replacement colony from forming after knockdown.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            The 79% and 88% results are what a 90% fertility reduction
+            looks like in practice over a monitoring period. The fertility
+            figure tells you what direction the population should go. The
+            track count data shows it actually did.
+          </p>
+
+          <div class="mt-8 bg-[#f0ebe0] rounded-xl p-6">
+            <p class="text-5xl font-bold text-[#c96a3a] mb-3">90%</p>
+            <p class="text-base font-semibold text-[#1c1814] mb-2">fertility reduction potential</p>
+            <p class="text-base text-[#1c1814]/60">Documented in active pest control programs that include Evolve fertility management</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CITY SCALE ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        City-level adoption
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        The same program running at scale.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        Fertility management for urban rodent control has been adopted at the
+        municipal level. These are city-funded programs, not vendor marketing claims.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {[
+          {
+            city: 'New York City',
+            detail: 'NYC City Council passed a rat contraceptive pilot bill in October 2024. Deployment of ContraPest — a fertility management product made by SenesTech — began in designated rat mitigation zones in April 2025.',
+            year: '2025',
+          },
+          {
+            city: 'Baltimore',
+            detail: 'Baltimore adopted Evolve for its city-run rodent control program in 2025. The program runs through the city\'s public health department as part of a broader effort to reduce the rat population citywide.',
+            year: '2025',
+          },
+          {
+            city: 'Chicago',
+            detail: 'The Wicker Park corridor deployment showed positive population results through early 2026, contributing to growing municipal interest in fertility management as a complement to traditional rodent control programs.',
+            year: '2026',
+          },
+        ].map(({ city, detail, year }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <div class="flex items-center justify-between mb-4">
+              <p class="text-base font-semibold text-[#1c1814]">{city}</p>
+              <span class="text-xs font-semibold text-[#1c1814]/45 bg-[#1c1814]/5 px-2 py-1 rounded">{year}</span>
+            </div>
+            <p class="text-base text-[#1c1814]/65 leading-relaxed">{detail}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── METHODOLOGY ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Monitoring methodology
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        How track counts work as a measurement standard.
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Track count monitoring uses tracking plates at each bait station.
+            These are cards coated in a medium that shows footprints. Rats
+            moving through the area walk across them. The number of tracks
+            per plate per visit gives you a consistent measure of activity
+            at that location.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Baseline plates are placed in Week 1 before fertility management
+            begins. Monthly visits replace the plates and record the track
+            count. The comparison against baseline shows whether activity at
+            each station is declining, stable, or increasing.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            This is the same measurement standard used by city rodent
+            control programs. It produces a documented record you can hand
+            to an inspector or property owner as evidence of active,
+            consistent management.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            { step: '1', label: 'Week 1 baseline', body: 'Tracking plates placed at each station location. Rodent activity recorded across all sites before fertility management begins.' },
+            { step: '2', label: 'Month 1 check-in', body: 'Plates replaced, track counts recorded. Evolve bait stations checked and replenished. Early comparison against baseline.' },
+            { step: '3', label: 'Month 2 check-in', body: 'Second data point against baseline. Population trend becoming measurable. Stations maintained.' },
+            { step: '4', label: '90-day summary', body: 'Full comparison across all station locations. Track presence percentage, density comparison, documented trend line. Delivered as written record.' },
+          ].map(({ step, label, body }) => (
+            <div class="flex gap-4">
+              <div class="w-8 h-8 rounded-full bg-[#c96a3a]/10 text-[#c96a3a] text-sm font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+                {step}
+              </div>
+              <div>
+                <p class="text-base font-semibold text-[#1c1814] leading-snug mb-1">{label}</p>
+                <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          Start building your own 90-day record.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          The field data above came from properties that started the same
+          program. Tell us about your property and we'll put together the
+          outline for yours.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/how-it-works"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            How it works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

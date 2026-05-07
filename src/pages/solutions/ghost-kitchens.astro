@@ -1,0 +1,252 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Rodent Control for Ghost Kitchens NYC & NJ | Cloakd"
+  description="One rodent sighting in a shared food facility puts every brand operating under that roof at risk. The 90-day program that keeps the building compliant."
+  path="/solutions/ghost-kitchens"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Ghost Kitchens &amp; Shared Food Facilities
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        You run the facility.<br />
+        One DOHMH citation shuts down every brand inside it.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl mb-10">
+        24/7 food prep, constant courier traffic, and multiple brands
+        in an older building — this is the highest rodent pressure
+        environment on any block. One inspection finding affects every
+        operator. The 90-day program keeps the building compliant
+        regardless of which brands are running inside.
+      </p>
+      <a
+        href="/get-started"
+        class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+      >
+        Start the 90-day program
+      </a>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── SHARED FACILITY RISK ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Why shared facilities face higher pressure
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Every brand shares the same inspection outcome.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        Ghost kitchens concentrate the conditions that attract rats and
+        distribute the consequences of a citation across every operator at
+        once. Individual brand diligence doesn't change that.
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {[
+          {
+            label: '24/7 food preparation',
+            body: 'Continuous operations mean persistent heat, smell, and food scraps around the clock. There\'s no overnight window that reduces the attractant.',
+          },
+          {
+            label: 'High delivery traffic',
+            body: 'Constant courier pickup means doors opening and closing throughout the day and night — more entry opportunities per hour than a standard restaurant.',
+          },
+          {
+            label: 'Older building stock',
+            body: 'Most ghost kitchen facilities operate in converted industrial or older commercial buildings. More structural gaps, more utility penetrations, more established rat travel paths.',
+          },
+          {
+            label: 'Multiple cuisine types',
+            body: 'Multiple brands running different menus creates a more varied food waste profile. A broader attractant than any single restaurant would generate on its own.',
+          },
+        ].map(({ label, body }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{body}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6 max-w-2xl">
+        <p class="text-base text-[#1c1814]/70 leading-relaxed">
+          Under NYC DOHMH, a rodent violation at the facility address applies
+          to the permitted space — not to any individual operator. A critical
+          violation affects the building's inspection record and every brand
+          using that address for their health department permit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHY TREATMENT ALONE ISN'T ENOUGH ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            The cycle problem in a ghost kitchen
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            The food never goes away. The vendor leaves. The rats come back.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            A ghost kitchen facility is a permanent food source in an urban
+            block. Treatment removes the current colony. The building's
+            attractant profile doesn't change — and within four to eight weeks,
+            rats from the surrounding block detect the open territory and move
+            back in. The cycle resets every treatment cycle.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            For a shared facility, this timing problem is compounded. The
+            facility operator is responsible for compliance, but the food
+            source comes from every brand in the building. Standard treatment
+            manages the symptom one cycle at a time.
+          </p>
+        </div>
+
+        <div class="bg-[#f0ebe0] rounded-xl p-8 space-y-6">
+          <h3 class="text-xl font-bold text-[#1c1814]">What makes ghost kitchens harder to protect</h3>
+          {[
+            { point: 'No brand owns the building problem', body: 'Individual operators focus on their own stations. Facility-wide rodent pressure doesn\'t belong to any one brand\'s exterminator.' },
+            { point: 'Brands cycle in and out', body: 'Operator turnover means changing food profiles and inconsistent cleaning standards. The facility program has to be independent of who\'s operating inside.' },
+            { point: 'Doors keep moving', body: 'Constant delivery pickup means entry points are harder to control than a restaurant that can lock up at night.' },
+          ].map(({ point, body }) => (
+            <div class="border-l-2 border-[#c96a3a]/40 pl-4">
+              <p class="text-base font-semibold text-[#1c1814] mb-1">{point}</p>
+              <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE PROGRAM ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        How it works for ghost kitchens
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        No existing vendor contract required.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        If the facility has an existing exterminator, we coordinate with them.
+        If it doesn't, we can connect you with a licensed partner for
+        Phase 1. Either way, the fertility management layer runs at the
+        facility level — independent of which brands are operating.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#d4a843] bg-[#d4a843]/10 px-3 py-1 rounded-full">Phase 1</span>
+            <span class="text-sm text-[#1c1814]/55">Existing vendor or coordinated partner</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Clear the facility baseline</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-6">
+            Initial treatment covers the whole building — not just individual
+            operator stations. We coordinate with whoever handles this phase
+            to get a documented clean baseline before the fertility management
+            starts.
+          </p>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed">
+            If there's no exterminator currently in place, we can connect
+            you with a licensed partner. No long-term contract required.
+          </p>
+        </div>
+
+        <div class="bg-white border border-[#7aab7e]/25 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#7aab7e] bg-[#7aab7e]/10 px-3 py-1 rounded-full">Phase 2</span>
+            <span class="text-sm text-[#1c1814]/55">Cloakd — facility fertility layer</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Stop the replacement from forming</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-6">
+            Evolve bait stations go in throughout the facility — utility
+            corridors, loading areas, exterior perimeter, back-of-house
+            in each operator zone. Evolve is made from cottonseed, EPA
+            minimum risk, cleared for active food-handling environments.
+            Deployment continues regardless of which brands are running.
+          </p>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed">
+            No secondary kill risk. Safe for 24/7 occupied facilities.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-[#e8e0d0] rounded-xl p-6 border border-[#1c1814]/5">
+        <p class="text-lg text-[#1c1814]/70 leading-relaxed">
+          Monthly reports cover the full facility footprint. The track count
+          record stays attached to the facility address as brands come and go.
+          That's the compliance documentation that matters when DOHMH shows up.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── PROOF ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Field data
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-16 max-w-2xl">
+        Numbers from monitored urban deployments.
+      </h2>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-12">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — 5-month urban field study, Aug 2025 to Jan 2026', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density at the same site', sub: 'Tracks per monitoring plate declined even where rodents were still present', color: '#7aab7e' },
+          { value: '90%', label: 'fertility reduction potential', sub: 'When Evolve runs alongside an active pest control program', color: '#c96a3a' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-[#f0ebe0] rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          The facility stays compliant. Whatever brands are in it.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          Tell us about the facility — building type, current pest control
+          setup if any, and how many operators are running. We'll put
+          together a program outline covering the full building footprint.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/how-it-works"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            How it works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

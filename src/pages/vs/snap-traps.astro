@@ -1,0 +1,286 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Snap Traps vs. Fertility Management | Cloakd"
+  description="A snap trap catches one rat. A colony produces 5 to 8 pups every three weeks. Why trapping alone can't keep up with an active urban infestation."
+  path="/vs/snap-traps"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Snap Traps vs. Fertility Management
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        The traps keep catching rats.<br />
+        The population isn't going down.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl mb-10">
+        Snap traps remove individual rats. They have no effect on how fast
+        the colony makes new ones. In a dense urban block with constant
+        inbound pressure from the surrounding area, catching rats one at
+        a time can't win.
+      </p>
+      <a
+        href="/get-started"
+        class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+      >
+        Start the 90-day program
+      </a>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE MATH ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        The reproduction math
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Trapping removes rats. The colony keeps making more.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        City rats reproduce fast. Here's what you're actually competing against.
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {[
+          {
+            value: '21–23',
+            unit: 'days',
+            label: 'gestation period',
+            sub: 'A female rat can produce a new litter roughly every three weeks',
+            color: '#c96a3a',
+          },
+          {
+            value: '5–8',
+            unit: 'pups',
+            label: 'per litter',
+            sub: 'Average litter size for the city rat species found in NYC and NJ',
+            color: '#c96a3a',
+          },
+          {
+            value: '5–6',
+            unit: 'litters/yr',
+            label: 'per breeding female',
+            sub: 'With a consistent food source, females can produce litters year-round',
+            color: '#c96a3a',
+          },
+          {
+            value: '~6 weeks',
+            unit: 'to maturity',
+            label: 'pups start breeding',
+            sub: 'New females begin reproducing about six weeks after birth, compounding within a single season',
+            color: '#c96a3a',
+          },
+        ].map(({ value, unit, label, sub, color }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <div class="flex items-baseline gap-1 mb-3">
+              <span class="text-4xl font-bold" style={`color:${color}`}>{value}</span>
+              <span class="text-base font-semibold text-[#1c1814]/55">{unit}</span>
+            </div>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6 max-w-2xl">
+        <p class="text-base text-[#1c1814]/70 leading-relaxed">
+          To hold population steady through trapping alone, you'd need to
+          catch rats faster than they're being born. In a dense urban block
+          with constant inbound pressure, that's not a realistic target.
+          Trapping manages the problem. It doesn't reduce it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHERE TRAPS WORK / DON'T ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            Where snap traps work
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            Traps work when the problem is small and contained.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            For a small number of individual rodents coming in from a known
+            point — a gap under a door you just found, a utility penetration
+            you're sealing next week — traps placed correctly will catch
+            them. They're also a useful option when chemical treatments
+            aren't appropriate for a particular space.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Most exterminators include snap traps as part of a broader
+            program. They work as one tool within a larger approach, not
+            as the main strategy for an established colony.
+          </p>
+        </div>
+
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            Where snap traps fall short
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            The bigger the colony, the more the math works against you.
+          </h2>
+          <div class="space-y-4">
+            {[
+              {
+                point: 'Needs daily checking and resetting',
+                body: 'A trap that catches a rat and sits for three days creates a hygiene problem and stops catching new ones. Effective trap programs are time-intensive at any significant scale.',
+              },
+              {
+                point: 'Can\'t keep up with a full colony',
+                body: 'Catching two or three rats a night in an active colony of 20 to 40 animals running at full reproduction produces no measurable population decline.',
+              },
+              {
+                point: 'Doesn\'t slow down breeding',
+                body: 'Trapping removes individuals. It has no effect on reproduction. A colony that loses a third of its members will replace them within weeks at full fertility.',
+              },
+              {
+                point: 'Creates visible dead rodents',
+                body: 'For restaurants and food businesses, a dead rat near food prep or in a storage area is a health department finding — even when the trapping is technically working.',
+              },
+            ].map(({ point, body }) => (
+              <div class="border-l-2 border-[#c96a3a]/40 pl-4">
+                <p class="text-base font-semibold text-[#1c1814] mb-1">{point}</p>
+                <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── COMPARISON ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        How they compare
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-16 max-w-2xl">
+        Trapping removes individuals. Fertility management shrinks the colony.
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+          <p class="text-sm font-semibold uppercase tracking-widest text-[#1c1814]/55 mb-6">Snap Traps</p>
+          <div class="space-y-4">
+            {[
+              { label: 'Removes individual rodents', yes: true },
+              { label: 'No chemicals', yes: true },
+              { label: 'No secondary kill risk', yes: true },
+              { label: 'Reduces colony reproduction rate', yes: false },
+              { label: 'Scales to established colony size', yes: false },
+              { label: 'Works passively between visits', yes: false },
+              { label: 'Breaks the replacement cycle', yes: false },
+              { label: 'Produces 90-day declining trend documentation', yes: false },
+            ].map(({ label, yes }) => (
+              <div class="flex items-center gap-3">
+                <div class={`w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center ${yes ? 'bg-[#7aab7e]/15' : 'bg-[#1c1814]/8'}`}>
+                  {yes
+                    ? <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#5e9263" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    : <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 1L7 7M7 1L1 7" stroke="#1c1814" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  }
+                </div>
+                <p class="text-base text-[#1c1814]/70">{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#7aab7e]/25 rounded-xl p-8">
+          <p class="text-sm font-semibold uppercase tracking-widest text-[#7aab7e] mb-6">Fertility Management (Evolve)</p>
+          <div class="space-y-4">
+            {[
+              { label: 'Removes individual rodents', yes: false, note: 'Phase 1 handles this' },
+              { label: 'No chemicals', yes: false, note: 'Cottonseed-derived, EPA minimum risk' },
+              { label: 'No secondary kill risk', yes: true },
+              { label: 'Reduces colony reproduction rate', yes: true },
+              { label: 'Scales to established colony size', yes: true },
+              { label: 'Works passively between visits', yes: true },
+              { label: 'Breaks the replacement cycle', yes: true },
+              { label: 'Produces 90-day declining trend documentation', yes: true },
+            ].map(({ label, yes, note }) => (
+              <div class="flex items-center gap-3">
+                <div class={`w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center ${yes ? 'bg-[#7aab7e]/15' : 'bg-[#1c1814]/8'}`}>
+                  {yes
+                    ? <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#5e9263" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    : <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 1L7 7M7 1L1 7" stroke="#1c1814" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  }
+                </div>
+                <div>
+                  <p class="text-base text-[#1c1814]/70">{label}</p>
+                  {note && <p class="text-sm text-[#1c1814]/45">{note}</p>}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── PROOF ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-12">
+        Field data
+      </p>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-10">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — 5-month urban field study, Aug 2025 to Jan 2026', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density at the same site', sub: 'Tracks per monitoring plate declined even where rodents were still present', color: '#7aab7e' },
+          { value: '90%', label: 'fertility reduction potential', sub: 'When Evolve runs alongside an active pest control program', color: '#c96a3a' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-[#f0ebe0] rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          Work on the colony, not one rat at a time.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          The 90-day program combines Phase 1 knockdown with continuous
+          fertility management. The population doesn't cycle back.
+          The 90-day trend is documented and declining.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/how-it-works"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            How it works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

@@ -1,0 +1,265 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Rodent Control for Food Storage & Cold Chain NYC & NJ | Cloakd"
+  description="One contamination event in cold storage. FDA inspection on file. Customer contract reviewed. The 90-day program that keeps food storage facilities compliant."
+  path="/solutions/food-storage"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Food Storage &amp; Cold Chain
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        The FDA doesn't schedule a second warning.<br />
+        Neither do your customers.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl mb-10">
+        One contamination finding triggers multiple consequences at once —
+        a federal violation on record, product quarantine, and customer
+        audit. Federal food safety law requires documented pest management.
+        The 90-day program builds that record before an inspector shows up.
+      </p>
+      <a
+        href="/get-started"
+        class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+      >
+        Start the 90-day program
+      </a>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE STAKES ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What a contamination event actually costs
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Food storage sits at the intersection of federal law and customer contracts. A rodent finding triggers both at once.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        Rodent activity in a food storage facility creates exposure at the
+        federal, state, customer, and liability level simultaneously.
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {[
+          {
+            label: 'Federal food safety violation',
+            body: 'Federal law requires documented pest management programs for food storage. A rodent finding during an FDA inspection can trigger a written observation or Warning Letter.',
+          },
+          {
+            label: 'Product contamination recall',
+            body: 'Evidence of rat activity in a storage area requires quarantine and testing of potentially affected product. A confirmed contamination triggers recall procedures.',
+          },
+          {
+            label: 'Customer contract review',
+            body: 'Large retail and food service customers audit suppliers and require compliance documentation. A rodent citation or FDA action triggers contract review at the account level.',
+          },
+          {
+            label: 'Insulation and wiring damage',
+            body: 'Cold chain facilities face a structural risk that restaurants don\'t: rats gnaw through refrigeration insulation and electrical wiring, creating equipment failure and fire exposure.',
+          },
+        ].map(({ label, body }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{body}</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6 max-w-2xl">
+        <p class="text-base text-[#1c1814]/70 leading-relaxed">
+          NJ food storage operators face equivalent exposure under state
+          health code in addition to federal requirements. A municipal
+          health department finding layers onto the federal record rather
+          than replacing it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHY FOOD STORAGE IS HARDER ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            Why food storage faces higher replacement pressure
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            The facility is a permanent, year-round food source for every rat in a three-block radius.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            A restaurant attracts rats from within its block. A food storage
+            facility attracts them from across multiple blocks. The density
+            of stored product — dry goods, refrigerated ingredients, packaged
+            inventory — makes it one of the highest-value rat territories
+            in any urban area.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Treatment clears the current colony. The food source doesn't
+            change. The block pressure around a large food storage facility
+            is higher than around a single restaurant, so the replacement
+            timeline after treatment can be shorter. The cycle a restaurant
+            experiences over six to eight weeks can compress further here.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            {
+              label: 'Year-round operation',
+              body: 'Food storage runs continuously. Consistent heat, waste, and product exposure makes the facility a permanent anchor for surrounding rat populations.',
+            },
+            {
+              label: 'Loading dock exposure',
+              body: 'Truck traffic means loading dock doors open and close dozens of times a day. Standard exclusion controls are harder to maintain with active dock operations.',
+            },
+            {
+              label: 'Multiple storage zones',
+              body: 'Facilities with dry storage, refrigerated areas, and freezer sections create different environments. Rat pressure concentrates around warm areas adjacent to cold zones — a pattern that\'s invisible without monitoring.',
+            },
+            {
+              label: 'Harder to detect early',
+              body: 'High racking density and limited visibility in warehouse storage means activity can go undetected longer than in a restaurant kitchen. By the time it\'s visible, the colony is already established.',
+            },
+          ].map(({ label, body }) => (
+            <div class="border-l-2 border-[#c96a3a]/40 pl-4">
+              <p class="text-base font-semibold text-[#1c1814] mb-1">{label}</p>
+              <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE PROGRAM ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        How it works for food storage
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        EPA minimum risk. Safe for active food environments.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        The same compliance requirements that make rodent management critical
+        in food storage also govern what can be deployed there. Evolve
+        is made from cottonseed and carries EPA minimum risk classification —
+        cleared for use in and around food storage without special permits.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#d4a843] bg-[#d4a843]/10 px-3 py-1 rounded-full">Phase 1</span>
+            <span class="text-sm text-[#1c1814]/55">Your existing vendor</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Treatment and facility assessment</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-6">
+            Your current exterminator handles immediate treatment and generates
+            the compliance documentation federal food safety law requires.
+            We coordinate with them to get a documented baseline across the
+            full facility before Phase 2 starts.
+          </p>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed">
+            Produces the FDA-required treatment records your compliance
+            program needs.
+          </p>
+        </div>
+
+        <div class="bg-white border border-[#7aab7e]/25 rounded-xl p-8">
+          <div class="inline-flex items-center gap-2 mb-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#7aab7e] bg-[#7aab7e]/10 px-3 py-1 rounded-full">Phase 2</span>
+            <span class="text-sm text-[#1c1814]/55">Cloakd — fertility management</span>
+          </div>
+          <h3 class="text-2xl font-bold text-[#1c1814] mb-4">Stop the replacement at the facility perimeter</h3>
+          <p class="text-base text-[#1c1814]/65 leading-relaxed mb-6">
+            Evolve bait stations go in at loading dock perimeters, utility
+            entry points, exterior walls, interior travel paths, and known
+            activity areas. Rats that eat the bait reproduce significantly
+            less. The replacement colony can't form at full size.
+          </p>
+          <p class="text-base text-[#1c1814]/55 leading-relaxed">
+            No secondary kill risk. No contamination pathway. Safe for
+            continuous deployment in active storage environments.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-[#e8e0d0] rounded-xl p-6 border border-[#1c1814]/5">
+        <p class="text-lg text-[#1c1814]/70 leading-relaxed">
+          The 90-day monitoring record — track counts per station, monthly
+          comparisons against baseline, documented declining trend — becomes
+          part of your pest management compliance documentation. It shows
+          active, continuous, measured management rather than a reactive
+          response to a finding.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── PROOF ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Field data
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-16 max-w-2xl">
+        Numbers from monitored urban deployments.
+      </h2>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-12">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — 5-month urban field study, Aug 2025 to Jan 2026', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density at the same site', sub: 'Tracks per monitoring plate declined even where rodents were still present', color: '#7aab7e' },
+          { value: '90%', label: 'fertility reduction potential', sub: 'When Evolve runs alongside an active pest control program', color: '#c96a3a' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-[#f0ebe0] rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          Build the compliance record before the inspection.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          Tell us about the facility — what you store, current pest control
+          setup, and any open compliance items. We'll put together a program
+          outline covering the full footprint.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/how-it-works"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            How it works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

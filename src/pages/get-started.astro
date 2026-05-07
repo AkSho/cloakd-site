@@ -1,0 +1,230 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Get Started | Cloakd — 90-Day Rodent Program"
+  description="Start the 90-day rodent fertility management program for your property. NYC and NJ restaurants, property managers, and ghost kitchen operators."
+  path="/get-started"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-16 px-6 max-w-6xl mx-auto">
+    <div class="max-w-2xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Start the program
+      </p>
+      <h1 class="text-5xl sm:text-6xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-6">
+        The rodent cycle ends here.<br />
+        Tell us about your property.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed">
+        We'll review your situation and put together the program. First response
+        within one business day.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── FORM + SIDEBAR ── -->
+  <section class="pb-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-[1fr_380px] gap-12 items-start">
+
+        <!-- Form -->
+        <div class="bg-white border border-[#1c1814]/8 rounded-2xl p-8 md:p-10">
+          <form name="get-started" method="POST" action="/thank-you" data-netlify="true" class="space-y-6">
+            <input type="hidden" name="form-name" value="get-started" />
+
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-semibold text-[#1c1814] mb-2" for="name">
+                  Your name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-[#1c1814]/15 bg-[#faf8f4] text-[#1c1814] placeholder:text-[#1c1814]/35 focus:outline-none focus:border-[#c96a3a]/50 transition-colors text-base"
+                  placeholder="First and last"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-[#1c1814] mb-2" for="business">
+                  Business name
+                </label>
+                <input
+                  type="text"
+                  id="business"
+                  name="business"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-[#1c1814]/15 bg-[#faf8f4] text-[#1c1814] placeholder:text-[#1c1814]/35 focus:outline-none focus:border-[#c96a3a]/50 transition-colors text-base"
+                  placeholder="Restaurant, building name, etc."
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-[#1c1814] mb-2" for="type">
+                Property type
+              </label>
+              <select
+                id="type"
+                name="type"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-[#1c1814]/15 bg-[#faf8f4] text-[#1c1814] focus:outline-none focus:border-[#c96a3a]/50 transition-colors text-base appearance-none"
+              >
+                <option value="" disabled selected>Select one</option>
+                <option value="restaurant">Restaurant</option>
+                <option value="property-manager">Property Manager</option>
+                <option value="ghost-kitchen">Ghost Kitchen</option>
+                <option value="food-storage">Food Storage / Cold Chain</option>
+                <option value="residential">Residential</option>
+                <option value="hoa">HOA or Co-op</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-[#1c1814] mb-2" for="address">
+                Property address
+              </label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-[#1c1814]/15 bg-[#faf8f4] text-[#1c1814] placeholder:text-[#1c1814]/35 focus:outline-none focus:border-[#c96a3a]/50 transition-colors text-base"
+                placeholder="Street address, city, state"
+              />
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-semibold text-[#1c1814] mb-2" for="email">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-[#1c1814]/15 bg-[#faf8f4] text-[#1c1814] placeholder:text-[#1c1814]/35 focus:outline-none focus:border-[#c96a3a]/50 transition-colors text-base"
+                  placeholder="you@business.com"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-[#1c1814] mb-2" for="phone">
+                  Phone
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="w-full px-4 py-3 rounded-lg border border-[#1c1814]/15 bg-[#faf8f4] text-[#1c1814] placeholder:text-[#1c1814]/35 focus:outline-none focus:border-[#c96a3a]/50 transition-colors text-base"
+                  placeholder="Optional"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-[#1c1814] mb-2" for="context">
+                Anything we should know
+              </label>
+              <textarea
+                id="context"
+                name="context"
+                rows="4"
+                class="w-full px-4 py-3 rounded-lg border border-[#1c1814]/15 bg-[#faf8f4] text-[#1c1814] placeholder:text-[#1c1814]/35 focus:outline-none focus:border-[#c96a3a]/50 transition-colors text-base resize-none"
+                placeholder="Current pest control setup, how long the problem has been going on, any recent inspections or violations — whatever's relevant."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full px-8 py-4 text-base font-semibold rounded-lg bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+            >
+              Submit — we'll be in touch within one business day
+            </button>
+
+            <p class="text-sm text-[#1c1814]/55 text-center">
+              NYC and NJ only. No commitment required to submit.
+            </p>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="space-y-6 lg:sticky lg:top-24">
+
+          <!-- What happens next -->
+          <div class="bg-[#f0ebe0] rounded-xl p-6">
+            <p class="text-sm font-semibold uppercase tracking-widest text-[#1c1814]/55 mb-5">
+              What happens next
+            </p>
+            <div class="space-y-5">
+              {[
+                { step: '1', label: 'We review your property', body: 'Address, property type, and current pest control setup. We assess whether the program is a fit.' },
+                { step: '2', label: 'You get a program outline', body: 'Phase 1 coordination with your existing vendor, Phase 2 bait station placement, and a 90-day monitoring schedule.' },
+                { step: '3', label: 'Deployment and tracking', body: 'Program runs with monthly check-ins and documented activity tracking throughout.' },
+                { step: '4', label: 'Results at 90 days', body: 'Full comparison against baseline. Track counts, activity levels, documented decline.' },
+              ].map(({ step, label, body }) => (
+                <div class="flex gap-4">
+                  <div class="w-7 h-7 rounded-full bg-[#c96a3a]/10 text-[#c96a3a] text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+                    {step}
+                  </div>
+                  <div>
+                    <p class="text-base font-semibold text-[#1c1814] leading-snug mb-1">{label}</p>
+                    <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Proof -->
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <p class="text-sm font-semibold uppercase tracking-widest text-[#1c1814]/55 mb-5">
+              Field data
+            </p>
+            <div class="space-y-4">
+              {[
+                { value: '79%', label: 'reduction in rodent track presence over 5 months', color: '#7aab7e' },
+                { value: '88%', label: 'drop in track density at the same location', color: '#7aab7e' },
+                { value: '90%', label: 'fertility reduction potential in active programs', color: '#c96a3a' },
+              ].map(({ value, label, color }) => (
+                <div class="flex items-start gap-3">
+                  <span class="text-2xl font-bold leading-none" style={`color:${color}`}>{value}</span>
+                  <p class="text-base text-[#1c1814]/65 leading-snug pt-1">{label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Who this is for -->
+          <div class="border border-[#1c1814]/8 rounded-xl p-6">
+            <p class="text-sm font-semibold uppercase tracking-widest text-[#1c1814]/55 mb-4">
+              Who we work with
+            </p>
+            <ul class="space-y-2">
+              {[
+                'Restaurants and food service operators',
+                'Property managers with multiple addresses',
+                'Ghost kitchen facilities',
+                'Food storage and cold chain operations',
+                'Residential buildings and HOAs',
+              ].map((item) => (
+                <li class="flex items-center gap-2 text-base text-[#1c1814]/70">
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#7aab7e] flex-shrink-0"></div>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <p class="mt-4 text-sm text-[#1c1814]/55">NYC and NJ only.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>
