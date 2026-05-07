@@ -109,8 +109,10 @@ import Base from '../layouts/Base.astro';
             admitting to the violation, typically at a reduced amount.
             Repeat violations within a short period are treated as a pattern
             and typically carry higher fines and increased inspection frequency.
-            At 28 points, the grade drops to C and DOHMH can issue a correction
-            order or temporary closure of the food service establishment.
+            At 14 to 27 points you receive a B grade or Grade Pending during
+            re-inspection. At 28 points, the grade drops to C and DOHMH can
+            issue a correction order or temporary closure of the food service
+            establishment.
           </p>
         </div>
         <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
@@ -170,7 +172,7 @@ import Base from '../layouts/Base.astro';
             { sign: 'Fresh droppings', detail: 'Along baseboards, in storage areas, near food or waste. Fresh droppings indicate recent activity.' },
             { sign: 'Gnaw marks', detail: 'On food packaging, structural wood, or utility penetrations. Signs of active feeding.' },
             { sign: 'Burrows', detail: 'Exterior burrow holes near building foundation or trash storage areas.' },
-            { sign: 'Grease marks', detail: 'Smear marks along walls or pipes from repeated rat travel along the same path.' },
+            { sign: 'Grease marks', detail: 'Smear marks along walls or pipes from repeated rat travel along the same path — evidence of harborage and established activity.' },
           ].map(({ sign, detail }) => (
             <div class="flex gap-4 items-start">
               <div class="flex-shrink-0 px-3 py-1 rounded-full text-xs font-semibold bg-[#c96a3a]/10 text-[#b85530]">
@@ -207,7 +209,7 @@ import Base from '../layouts/Base.astro';
             {[
               'Cleared active population at the time of treatment',
               'Service receipt documenting the visit',
-              'Licensed exterminator compliance documentation',
+              'Licensed pest management professional (PMP) compliance documentation',
               '4 to 8 weeks before replacement pressure builds back',
             ].map((item) => (
               <div class="flex items-start gap-3">
