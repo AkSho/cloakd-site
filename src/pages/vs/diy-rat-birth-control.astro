@@ -1,0 +1,278 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="DIY Rat Birth Control vs. Managed Program | Cloakd"
+  description="You can buy Evolve on Ratology for $99. Deployment structure is 90% of the outcome. Here's what the DIY approach skips — and why it produces the Bryant Park result, not the 79% result."
+  path="/vs/diy-rat-birth-control"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        DIY vs. Managed Program
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        The product is available for $99.<br />
+        The program is what produces the result.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl">
+        Evolve rat fertility management is available on retail sites as a
+        starter kit. Same active ingredient. Same EPA registration. The
+        deployments that failed — including NYC's Bryant Park pilot — used
+        the same mechanism. What separated the programs that worked from
+        the ones that didn't wasn't the product. It was the structure around it.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHAT YOU GET FOR $99 ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What a DIY kit includes
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        The bait. A station. Instructions.
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div class="space-y-6">
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            A retail Evolve starter kit gives you a supply of soft bait, one
+            or two bait stations, and a guide to placement. For a homeowner
+            with light rodent activity and no compliance exposure, that
+            might be enough.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            For a commercial operator — a restaurant with a DOHMH file, a
+            property manager with an HPD complaint, a building with a
+            persistent multi-year infestation — the kit is missing the
+            three things that determine whether the outcome is 79% reduction
+            or zero.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            {
+              missing: 'Phase 1 knockdown',
+              body: 'Fertility management is designed to stop the replacement colony from forming after a knockdown clears the active population. Deploying Evolve into a full-density active infestation is the same structural failure as Bryant Park. The bait can\'t do its job when the population is already at baseline.',
+            },
+            {
+              missing: 'Station placement expertise',
+              body: 'Rats move along walls, through specific entry points, along established travel paths. Effective station placement requires reading those routes correctly. Generic "near entry points" guidance produces inconsistent consumption and no way to know if the bait is being taken at the concentration needed.',
+            },
+            {
+              missing: 'Monthly monitoring',
+              body: 'Without track count data, you have no way to confirm the program is working. No trend line. No documentation for an inspector. No basis for adjusting placement or replenishment schedule. You\'re deploying blind.',
+            },
+          ].map(({ missing, body }) => (
+            <div class="border-l-2 border-[#c96a3a]/40 pl-4">
+              <h3 class="text-base font-semibold text-[#1c1814] mb-1">Missing: {missing}</h3>
+              <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE FAILURE PATTERN ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        The documented failure pattern
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Every failed deployment shares the same structure.
+      </h2>
+      <p class="text-lg text-[#1c1814]/65 max-w-xl mb-16 leading-relaxed">
+        Bryant Park. Standalone retail deployments. Open-environment trials
+        without prior knockdown. The failure mode isn't the product — it's
+        deploying Phase 2 without Phase 1, in an environment that doesn't
+        constrain competing attractants, with no monitoring to catch the problem.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-[#f0ebe0] rounded-xl p-8">
+          <p class="text-sm font-semibold uppercase tracking-widest text-[#1c1814]/45 mb-6">DIY / Standalone Deployment</p>
+          <div class="space-y-4">
+            {[
+              { label: 'Active population already at density', bad: true },
+              { label: 'No Phase 1 knockdown before bait goes in', bad: true },
+              { label: 'Bait placed without confirmed travel path data', bad: true },
+              { label: 'Competing food sources unmanaged', bad: true },
+              { label: 'No track count data to confirm consumption', bad: true },
+              { label: 'No monthly replenishment schedule', bad: true },
+              { label: 'No documentation record for inspectors', bad: true },
+            ].map(({ label, bad }) => (
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center bg-[#1c1814]/8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 1L7 7M7 1L1 7" stroke="#1c1814" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </div>
+                <p class="text-base text-[#1c1814]/65">{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="bg-white border border-[#7aab7e]/25 rounded-xl p-8">
+          <p class="text-sm font-semibold uppercase tracking-widest text-[#7aab7e] mb-6">Cloakd 90-Day Program</p>
+          <div class="space-y-4">
+            {[
+              'Phase 1 knockdown through your existing exterminator first',
+              'Evolve deployed from a documented clean baseline',
+              'Stations placed along confirmed rat travel paths',
+              'Enclosed urban environment limits competing attractants',
+              'Monthly track count plates at every station',
+              'Bait checked and replenished each monthly visit',
+              'Written monitoring record delivered each cycle',
+            ].map((label) => (
+              <div class="flex items-center gap-3">
+                <div class="w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center bg-[#7aab7e]/15">
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#5e9263" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <p class="text-base text-[#1c1814]/70">{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── THE DATA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What the managed program produces
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        Same product. Structured deployment. Different outcome.
+      </h2>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-10">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — 5-month urban building deployment, Aug 2025 to Jan 2026', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density', sub: 'Same site — tracks per monitoring plate declined even at stations with residual activity', color: '#7aab7e' },
+          { value: '50%+', label: 'reduction at Location B', sub: 'Independent urban site, same 5-month period, different building profile', color: '#7aab7e' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-sm text-[#1c1814]/40 max-w-2xl">
+        Source: <a href="https://www.prnewswire.com/news-releases/senestech-reports-significant-reductions-in-rodent-activity-following-evolve-deployments-in-urban-field-studies-302691116.html" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-[#1c1814]/65 transition-colors">SenesTech, Inc. — February 18, 2026</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHO DIY WORKS FOR ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        When DIY is appropriate
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        There are cases where a retail kit is the right call.
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div class="space-y-6">
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            If you're a homeowner with light activity, no active infestation,
+            no compliance exposure, and you've already done your own exclusion
+            work, a retail Evolve kit placed along a known travel path can
+            work. It's the same mechanism. The environment is more controlled
+            than a park. The stakes are lower than a commercial kitchen.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            For commercial operators, the risk calculation is different. A
+            failed deployment doesn't just cost you the $99 kit. It costs
+            you the 90 days you spent not solving the problem while an
+            inspector's next visit gets closer.
+          </p>
+        </div>
+
+        <div class="bg-[#f0ebe0] rounded-xl p-8 space-y-6">
+          <div>
+            <p class="text-base font-semibold text-[#1c1814] mb-2">DIY may be sufficient if:</p>
+            <ul class="space-y-2">
+              {[
+                'Residential property, no compliance exposure',
+                'Light or preventive — no active heavy infestation',
+                'You\'ve already done exclusion and identified entry points',
+                'No vendor coordination needed for Phase 1',
+              ].map((item) => (
+                <li class="flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#1c1814]/30 flex-shrink-0 mt-2"></div>
+                  <p class="text-base text-[#1c1814]/65">{item}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="border-t border-[#1c1814]/8 pt-6">
+            <p class="text-base font-semibold text-[#1c1814] mb-2">A managed program is the right call if:</p>
+            <ul class="space-y-2">
+              {[
+                'Restaurant, commercial kitchen, or food storage facility',
+                'Active infestation with DOHMH or HPD history',
+                'Multi-unit building where treating one unit moves pressure',
+                'You need a documented monitoring record for compliance',
+              ].map((item) => (
+                <li class="flex items-start gap-3">
+                  <div class="w-1.5 h-1.5 rounded-full bg-[#c96a3a]/50 flex-shrink-0 mt-2"></div>
+                  <p class="text-base text-[#1c1814]/65">{item}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          The product isn't the variable. The structure is.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          Tell us about your property and current pest control setup.
+          We'll outline exactly what Phase 1 looks like with your existing
+          vendor and how the Evolve layer fits on top.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/does-rat-birth-control-work"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            Why Bryant Park failed
+          </a>
+          <a
+            href="/results"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            See the field data
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

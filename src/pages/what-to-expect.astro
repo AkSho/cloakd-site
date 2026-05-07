@@ -1,0 +1,253 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="What to Expect | Cloakd 90-Day Rodent Program"
+  description="How the engagement works: intake, Phase 1 coordination, Evolve deployment, monthly monitoring, and what you receive at the end of 90 days. No surprises."
+  path="/what-to-expect"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        What to expect
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        Here's exactly how the 90-day program works.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl">
+        From the first conversation to the final monitoring report. What
+        happens, when it happens, what you receive, and what we need from
+        you at each stage. No hidden steps.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── TIMELINE ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Program timeline
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-16 max-w-2xl">
+        Four stages. 90 days. A documented trend at the end.
+      </h2>
+
+      <div class="space-y-6">
+        {[
+          {
+            phase: 'Week 1',
+            label: 'Intake and property assessment',
+            body: 'We talk through your property — building type, current pest control vendor, infestation history, any active DOHMH or HPD citations, and access logistics. This conversation takes 20–30 minutes. We need to understand the site before we outline the program. You\'ll also tell us what your current exterminator is doing and how often they\'re coming.',
+            you: 'You: provide property details and access to relevant compliance history.',
+            us: 'Us: map entry points, travel paths, and bait station placement plan.',
+          },
+          {
+            phase: 'Weeks 1–3',
+            label: 'Phase 1 — knockdown through your existing vendor',
+            body: 'Phase 1 is handled by your existing pest control vendor, not us. We coordinate with them to confirm a knockdown treatment is completed before the Evolve layer goes in. If you don\'t have an active vendor, we help you source one. The fertility management layer needs to start from a documented clean baseline — that\'s what Phase 1 creates.',
+            you: 'You: confirm scheduled treatment with your exterminator.',
+            us: 'Us: coordinate timing, confirm completion, set baseline tracking plates.',
+          },
+          {
+            phase: 'Week 3–4',
+            label: 'Phase 2 — Evolve deployment and baseline tracking',
+            body: 'Evolve soft bait stations go in along confirmed rat travel paths and near entry points. Baseline tracking plates are placed at each station location. These record initial activity before the fertility management program begins reducing the population — your Week 1 baseline is what every monthly comparison is measured against.',
+            you: 'You: provide access for station installation.',
+            us: 'Us: install bait stations, place tracking plates, document baseline counts.',
+          },
+          {
+            phase: 'Monthly — months 2 and 3',
+            label: 'Monthly monitoring visits',
+            body: 'Each monthly visit: tracking plates collected and read, new plates placed, bait stations checked and replenished, notes on any new activity or access changes. The track count at each station is recorded and compared against baseline. By month 3, you have three data points showing the trend direction.',
+            you: 'You: provide access for monthly visits.',
+            us: 'Us: collect data, replenish bait, deliver written monitoring report.',
+          },
+        ].map(({ phase, label, body, you, us }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-8">
+            <div class="flex flex-col sm:flex-row sm:items-start gap-6">
+              <div class="flex-shrink-0">
+                <span class="inline-block bg-[#c96a3a]/10 text-[#c96a3a] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded">{phase}</span>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-[#1c1814] mb-3">{label}</h3>
+                <p class="text-base text-[#1c1814]/65 leading-relaxed mb-4">{body}</p>
+                <div class="grid sm:grid-cols-2 gap-3">
+                  <div class="bg-[#f0ebe0] rounded-lg px-4 py-3">
+                    <p class="text-sm text-[#1c1814]/65 leading-relaxed">{you}</p>
+                  </div>
+                  <div class="bg-[#f0ebe0] rounded-lg px-4 py-3">
+                    <p class="text-sm text-[#1c1814]/65 leading-relaxed">{us}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHAT YOU RECEIVE ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What you receive
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        Three monitoring reports and a documented trend line.
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {[
+          {
+            label: 'Baseline report',
+            timing: 'End of Week 3–4',
+            body: 'Station locations, travel paths documented, baseline track counts at each station. This is what every future comparison is measured against. It\'s also the record that shows active management started on a specific date.',
+          },
+          {
+            label: 'Month 2 monitoring report',
+            timing: 'End of Month 2',
+            body: 'Track count comparison against baseline at every station. Notes on bait consumption, station condition, and any new activity detected. First data point on the trend direction.',
+          },
+          {
+            label: '90-day summary report',
+            timing: 'End of Month 3',
+            body: 'Full three-point trend line: baseline, month 2, month 3. Track presence percentage, density comparison, station-by-station breakdown. This is the document you hand to an inspector, property owner, or board as evidence of active, consistent, documented management.',
+          },
+        ].map(({ label, timing, body }) => (
+          <div class="bg-[#f0ebe0] rounded-xl p-6">
+            <p class="text-xs font-semibold uppercase tracking-widest text-[#c96a3a] mb-3">{timing}</p>
+            <h3 class="text-base font-semibold text-[#1c1814] mb-3">{label}</h3>
+            <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHAT WE NEED ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What we need from you
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        Three things. That's the full list.
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        {[
+          {
+            num: '1',
+            label: 'An existing pest control vendor',
+            body: 'Phase 1 knockdown runs through whoever already has your account. We coordinate with them — we don\'t replace them. If you don\'t have an active vendor, we can point you toward one. Either way, Phase 1 needs to complete before Phase 2 starts.',
+          },
+          {
+            num: '2',
+            label: 'Access for monthly visits',
+            body: 'Each monthly visit takes 30–45 minutes. We need access to the areas where stations are placed — utility areas, basement, loading dock, kitchen perimeter, or wherever the travel paths are. Advance scheduling, one day\'s notice.',
+          },
+          {
+            num: '3',
+            label: 'Compliance history if you have it',
+            body: 'Any active DOHMH violations, HPD complaints, or prior inspection reports help us place stations correctly and frame the monitoring record in a way that\'s useful for your next inspector interaction. Not required — helpful.',
+          },
+        ].map(({ num, label, body }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <div class="w-8 h-8 rounded-full bg-[#c96a3a]/10 text-[#c96a3a] text-sm font-bold flex items-center justify-center mb-4">{num}</div>
+            <h3 class="text-base font-semibold text-[#1c1814] mb-3">{label}</h3>
+            <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── PRICING ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div>
+          <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+            Pricing
+          </p>
+          <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+            Flat program fee. No per-visit billing.
+          </h2>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-6">
+            The 90-day program is priced as a flat engagement — three monthly
+            monitoring visits, all bait and station materials, and the full
+            reporting package. Pricing is based on property size and number
+            of stations required.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Tell us about your property in the intake form and we'll send a
+            specific outline within one business day.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            {
+              label: 'Is this covered by my existing pest control contract?',
+              body: 'No. This is a separate engagement on top of your existing vendor relationship. Your vendor stays — they handle Phase 1 knockdown. Cloakd handles the Evolve fertility layer and monthly monitoring.',
+            },
+            {
+              label: 'What happens after 90 days?',
+              body: 'At the end of the 90-day period, you have a documented trend line and a complete monitoring record. If activity has declined to the target level, many properties shift to a maintenance schedule. We discuss continuation options at the 90-day report delivery.',
+            },
+            {
+              label: 'What if the building has multiple units or floors?',
+              body: 'Station count and placement plan scale with the building. Multi-unit buildings and multi-floor properties are quoted based on confirmed travel paths and access logistics. We\'ve handled buildings from single-floor restaurant footprints to multi-building residential portfolios.',
+            },
+          ].map(({ label, body }) => (
+            <div class="border-l-2 border-[#c96a3a]/40 pl-4">
+              <h3 class="text-base font-semibold text-[#1c1814] mb-1">{label}</h3>
+              <p class="text-base text-[#1c1814]/65 leading-relaxed">{body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          Ready to start?
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          Fill out the intake form. Tell us about your property and current
+          pest control setup. We'll send a program outline — specific to
+          your building, not a generic proposal — within one business day.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/how-it-works"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            How it works
+          </a>
+          <a
+            href="/questions"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            FAQ
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>
