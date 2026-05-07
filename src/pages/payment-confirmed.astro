@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Payment Confirmed | Cloakd"
+  description="Your 90-day program has been confirmed. Here's exactly what happens next."
+  path="/payment-confirmed"
+>
+
+  <section class="min-h-[70vh] flex flex-col justify-center px-6 py-24 max-w-6xl mx-auto">
+    <div class="max-w-xl">
+      <div class="w-10 h-10 rounded-full bg-[#7aab7e]/15 flex items-center justify-center mb-8">
+        <svg width="20" height="16" viewBox="0 0 20 16" fill="none">
+          <path d="M1.5 8L7 13.5L18.5 2" stroke="#5e9263" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Payment confirmed
+      </p>
+      <h1 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+        You're in. Here's what happens next.
+      </h1>
+      <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-10">
+        You'll receive an email within the hour with intake questions — property
+        access, your current exterminator, and any active citations. Once we
+        have those, we schedule the site walk within the week.
+      </p>
+
+      <div class="space-y-4 mb-12">
+        {[
+          { step: '1', label: 'Intake email', body: 'Arriving within the hour. Reply with your property details and exterminator contact.' },
+          { step: '2', label: 'Site walk scheduled', body: 'We book your PCO site walk within one week of your intake response.' },
+          { step: '3', label: 'Phase 1 coordination', body: 'We contact your existing exterminator to align Phase 1 timing before Evolve goes in.' },
+          { step: '4', label: 'Baseline deployment', body: 'Evolve stations and tracking plates in by week 3–4. Your monitoring record starts here.' },
+        ].map(({ step, label, body }) => (
+          <div class="flex gap-4">
+            <div class="w-7 h-7 rounded-full bg-[#c96a3a]/10 text-[#c96a3a] text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">{step}</div>
+            <div>
+              <p class="text-base font-semibold text-[#1c1814] mb-0.5">{label}</p>
+              <p class="text-base text-[#1c1814]/60 leading-relaxed">{body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="bg-[#f0ebe0] rounded-xl p-6 mb-10">
+        <p class="text-sm font-semibold text-[#1c1814] mb-2">Questions before the intake email arrives?</p>
+        <p class="text-base text-[#1c1814]/65 leading-relaxed">
+          Reach out directly at <span class="text-[#1c1814]">hello@cloakd-removals.cloud</span>
+        </p>
+      </div>
+
+      <a
+        href="/what-to-expect"
+        class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+      >
+        Review the full program timeline
+      </a>
+    </div>
+  </section>
+
+</Base>
