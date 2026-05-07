@@ -1,0 +1,269 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Bell Environmental Alternative NYC | Cloakd"
+  description="Bell Environmental's multilayer defense eliminates what's there. The replacement colony that forms four weeks later is a biology problem their program isn't designed to address."
+  path="/vs/bell-environmental"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Bell Environmental vs. Cloakd
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        Bell Environmental's multilayer defense removes what's there.<br />
+        Here's what keeps the problem coming back.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl">
+        Bell Environmental has been serving NYC metro commercial clients
+        since 1963. Their multilayer program — perimeter protection plus
+        internal mechanical trapping — is a sound approach to eliminating
+        active rodent populations. The replacement cycle that refills empty
+        territory after elimination is outside what any mechanical trapping
+        program addresses. That's the gap fertility management closes.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHAT BELL COVERS ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What Bell Environmental's program covers
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Sixty years of NYC commercial pest control. Same biological limitation as every standard program.
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div class="space-y-6">
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Bell Environmental's Zero-Pest Zone System covers the full
+            perimeter of a commercial building — outside protection combined
+            with internal mechanical trapping to eliminate Norway rats and
+            mice across all five NYC boroughs. Their licensed pest management
+            professionals serve restaurants, hotels, hospitals, and commercial
+            properties throughout the NYC metro area.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            The issue isn't the program — it's what happens after the
+            population is removed. Mechanical trapping reduces the active
+            colony. It doesn't reduce the fertility of the replacement
+            population moving in from surrounding harborage once the
+            territory goes empty. Four to eight weeks after a successful
+            elimination, the same travel paths, the same entry points,
+            the same food sources produce the same infestation.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            For NYC restaurant operators on a recurring DOHMH inspection
+            cycle, that replacement timeline is the exposure. Fertility
+            management doesn't replace Bell's mechanical program — it
+            addresses the one variable that program can't reach.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            {
+              label: 'What Bell Environmental covers',
+              items: [
+                'Perimeter protection — outside building rodent defense',
+                'Internal mechanical trapping program',
+                'Zero-Pest Zone System Guarantee',
+                'Licensed PMP service across all five NYC boroughs and NJ',
+                'DOHMH compliance documentation',
+              ],
+              positive: true,
+            },
+            {
+              label: 'What mechanical trapping leaves open',
+              items: [
+                'Replacement colony forming after mechanical elimination',
+                'Population fertility during the interval between visits',
+                'Documented 90-day population trend for DOHMH inspectors',
+                'Track count data showing activity trajectory over time',
+              ],
+              positive: false,
+            },
+          ].map(({ label, items, positive }) => (
+            <div class={`rounded-xl p-6 ${positive ? 'bg-white border border-[#1c1814]/8' : 'bg-white border border-[#c96a3a]/15'}`}>
+              <p class="text-sm font-semibold uppercase tracking-widest text-[#1c1814]/45 mb-4">{label}</p>
+              <div class="space-y-3">
+                {items.map((item) => (
+                  <div class="flex items-start gap-3">
+                    <div class={`w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5 ${positive ? 'bg-[#7aab7e]/15' : 'bg-[#1c1814]/8'}`}>
+                      {positive
+                        ? <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#5e9263" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        : <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 1L7 7M7 1L1 7" stroke="#1c1814" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/></svg>
+                      }
+                    </div>
+                    <p class="text-base text-[#1c1814]/70 leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── COMPARISON TABLE ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Side-by-side comparison
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        Bell Environmental vs. Cloakd 90-day program
+      </h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="border-b border-[#1c1814]/10">
+              <th class="py-4 pr-6 text-sm font-semibold text-[#1c1814]/45 uppercase tracking-widest w-1/3">Feature</th>
+              <th class="py-4 pr-6 text-sm font-semibold text-[#1c1814]/45 uppercase tracking-widest w-1/3">Bell Environmental</th>
+              <th class="py-4 text-sm font-semibold text-[#c96a3a] uppercase tracking-widest w-1/3">Cloakd (added layer)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ['Treatment method', 'Perimeter defense + internal mechanical trapping (Zero-Pest Zone System)', 'Evolve fertility management bait stations — reduces replacement colony formation'],
+              ['Monitoring', 'Scheduled visit reports, Zero-Pest Zone Guarantee', 'Monthly track count plates — documented declining trend over 90 days'],
+              ['Replacement cycle', 'Cleared by trapping, rebuilds 4–8 weeks later', 'Replacement population forms at reduced rate — density declines continuously'],
+              ['DOHMH compliance record', 'Licensed PMP service documentation', 'Written monthly monitoring reports — 90-day trend line for inspectors'],
+              ['Re-inspection risk', 'Dependent on inspection timing relative to last elimination', 'Reduced — documented declining population between visits'],
+              ['Works with existing vendor', 'Is your existing vendor', 'Yes — Bell Environmental stays, Cloakd adds the fertility layer'],
+            ].map(([feature, bell, cloakd]) => (
+              <tr class="border-b border-[#1c1814]/8">
+                <td class="py-4 pr-6 text-base font-semibold text-[#1c1814]">{feature}</td>
+                <td class="py-4 pr-6 text-base text-[#1c1814]/60 leading-relaxed">{bell}</td>
+                <td class="py-4 text-base text-[#1c1814]/70 leading-relaxed">{cloakd}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── FIELD DATA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What fertility management adds to the outcome
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        Mechanical elimination plus fertility management. Different trajectory.
+      </h2>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-8">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — 5-month urban building deployment, Aug 2025 to Jan 2026', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density at the same site', sub: 'Tracks per monitoring plate declined even at stations with residual activity', color: '#7aab7e' },
+          { value: '50%+', label: 'reduction at a second independent site', sub: 'Same 5-month period, different urban building profile', color: '#7aab7e' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-sm text-[#1c1814]/40 max-w-2xl">
+        Source: <a href="https://www.prnewswire.com/news-releases/senestech-reports-significant-reductions-in-rodent-activity-following-evolve-deployments-in-urban-field-studies-302691116.html" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-[#1c1814]/65 transition-colors">SenesTech, Inc. — February 18, 2026</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHO SHOULD USE EACH ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        How to think about it
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        Bell handles elimination. Cloakd handles what comes after.
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-[#f0ebe0] rounded-xl p-8">
+          <p class="text-base font-semibold text-[#1c1814] mb-4">Bell Environmental alone is sufficient if:</p>
+          <ul class="space-y-3">
+            {[
+              'You have a one-time infestation with no recurring citation history',
+              'Your building doesn\'t have the surrounding density pressure driving fast replacement',
+              'You need immediate elimination and licensed compliance documentation',
+              'DOHMH inspection timing has consistently been favorable post-treatment',
+            ].map((item) => (
+              <li class="flex items-start gap-3">
+                <div class="w-1.5 h-1.5 rounded-full bg-[#7aab7e] flex-shrink-0 mt-2"></div>
+                <p class="text-base text-[#1c1814]/65">{item}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="bg-[#f0ebe0] rounded-xl p-8">
+          <p class="text-base font-semibold text-[#1c1814] mb-4">Add Cloakd if:</p>
+          <ul class="space-y-3">
+            {[
+              'You\'ve had repeat 04K or 04L citations despite consistent Bell service',
+              'You need a documented 90-day population trend for DOHMH re-inspection',
+              'The replacement cycle keeps resetting between scheduled visits',
+              'Your inspector wants evidence of active management, not just elimination records',
+            ].map((item) => (
+              <li class="flex items-start gap-3">
+                <div class="w-1.5 h-1.5 rounded-full bg-[#c96a3a]/50 flex-shrink-0 mt-2"></div>
+                <p class="text-base text-[#1c1814]/65">{item}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          Bell Environmental handles elimination. The 90-day program handles what comes back.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          Tell us how long the cycle has been running and who handles
+          your current service. We'll outline what the fertility layer
+          adds on top.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/why-it-keeps-coming-back"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            Why it keeps coming back
+          </a>
+          <a
+            href="/results"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            Field data
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>

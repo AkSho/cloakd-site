@@ -1,0 +1,266 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base
+  title="Assured Environments Alternative NYC | Cloakd"
+  description="Assured Environments has been handling NYC commercial pest control since 1934. Standard treatment removes what's there. Here's the layer it doesn't address — and why the cycle keeps running."
+  path="/vs/assured-environments"
+>
+
+  <!-- ─────────────────────────────────────── HERO ── -->
+  <section class="pt-20 pb-24 px-6 max-w-6xl mx-auto">
+    <div class="max-w-3xl">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-6">
+        Assured Environments vs. Cloakd
+      </p>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1c1814] leading-[1.08] tracking-tight mb-8">
+        Assured Environments has been solving NYC pest problems since 1934.<br />
+        Here's the one thing their program can't address.
+      </h1>
+      <p class="text-xl text-[#1c1814]/70 leading-relaxed max-w-2xl">
+        Assured Environments is the largest commercial pest control provider
+        in New York. Their program — exclusion, sanitation, licensed treatment
+        — is executed correctly. The replacement cycle that fills empty
+        territory four to eight weeks after treatment is a biology problem
+        that standard pest control is not designed to solve. That's what
+        the fertility management layer addresses.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHAT ASSURED COVERS ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What standard treatment covers
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6 max-w-2xl">
+        Exclusion, sanitation, and knockdown. All done correctly. Still not enough to stop the cycle.
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div class="space-y-6">
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Assured Environments' approach — exclusion to block entry points,
+            sanitation assessment, licensed treatment to remove the active
+            colony — is the correct foundation for any rodent management
+            program. With 90 years of commercial experience and over 150
+            field technicians, their execution is as good as it gets in NYC.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            The problem isn't execution. It's what happens after the colony
+            is removed. Empty territory in a dense urban block is detected
+            by surrounding Norway rats within days. Four to eight weeks later,
+            a new group has moved in and established harborage. The food
+            source hasn't changed. The next treatment cycle starts.
+          </p>
+          <p class="text-lg text-[#1c1814]/65 leading-relaxed">
+            Standard pest control — regardless of how well it's done — has
+            no mechanism to slow down how fast the replacement population
+            forms. That's what fertility management adds.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          {[
+            {
+              label: 'What Assured Environments covers',
+              items: [
+                'Active colony removal through licensed treatment',
+                'Exclusion work — sealing entry points and structural gaps',
+                'Sanitation assessment and harborage reduction',
+                'Ongoing service contract and scheduled visits',
+                'DOHMH compliance documentation from a licensed PMP',
+                '24/7 support and response for active infestations',
+              ],
+              positive: true,
+            },
+            {
+              label: 'What standard treatment leaves open',
+              items: [
+                'Replacement colony forming 4–8 weeks after knockdown',
+                'Population fertility during the interval between visits',
+                'Documented declining trend for DOHMH re-inspection',
+                'Track count data showing activity over 90 days',
+              ],
+              positive: false,
+            },
+          ].map(({ label, items, positive }) => (
+            <div class={`rounded-xl p-6 ${positive ? 'bg-white border border-[#1c1814]/8' : 'bg-white border border-[#c96a3a]/15'}`}>
+              <p class="text-sm font-semibold uppercase tracking-widest text-[#1c1814]/45 mb-4">{label}</p>
+              <div class="space-y-3">
+                {items.map((item) => (
+                  <div class="flex items-start gap-3">
+                    <div class={`w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center mt-0.5 ${positive ? 'bg-[#7aab7e]/15' : 'bg-[#1c1814]/8'}`}>
+                      {positive
+                        ? <svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4L3.5 6.5L9 1" stroke="#5e9263" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        : <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1 1L7 7M7 1L1 7" stroke="#1c1814" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round"/></svg>
+                      }
+                    </div>
+                    <p class="text-base text-[#1c1814]/70 leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── COMPARISON TABLE ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        Side-by-side comparison
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        Assured Environments vs. Cloakd 90-day program
+      </h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="border-b border-[#1c1814]/10">
+              <th class="py-4 pr-6 text-sm font-semibold text-[#1c1814]/45 uppercase tracking-widest w-1/3">Feature</th>
+              <th class="py-4 pr-6 text-sm font-semibold text-[#1c1814]/45 uppercase tracking-widest w-1/3">Assured Environments</th>
+              <th class="py-4 text-sm font-semibold text-[#c96a3a] uppercase tracking-widest w-1/3">Cloakd (added layer)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ['Treatment method', 'Exclusion, sanitation, licensed knockdown', 'Fertility management via Evolve bait stations — runs on top of your existing program'],
+              ['Monitoring', 'Service reports per scheduled visit', 'Monthly track count plates at every station — documented declining trend over 90 days'],
+              ['Replacement cycle', 'Cleared at treatment, rebuilds 4–8 weeks later', 'Reduces how fast the replacement colony forms — population declines between treatment visits'],
+              ['DOHMH compliance record', 'Licensed PMP service documentation', 'Written monitoring report every 30 days — 90-day trend line to hand an inspector'],
+              ['Re-inspection risk', 'Dependent on inspection timing relative to treatment', 'Reduced — population density declining continuously, not cycling'],
+              ['Works with existing vendor', 'Is your existing vendor', 'Yes — Cloakd adds a layer, Assured Environments stays'],
+            ].map(([feature, assured, cloakd]) => (
+              <tr class="border-b border-[#1c1814]/8">
+                <td class="py-4 pr-6 text-base font-semibold text-[#1c1814]">{feature}</td>
+                <td class="py-4 pr-6 text-base text-[#1c1814]/60 leading-relaxed">{assured}</td>
+                <td class="py-4 text-base text-[#1c1814]/70 leading-relaxed">{cloakd}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── FIELD DATA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        What the fertility management layer produces
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        Same knockdown foundation. Different outcome over 90 days.
+      </h2>
+
+      <div class="grid sm:grid-cols-3 gap-6 mb-8">
+        {[
+          { value: '79%', label: 'reduction in rodent track presence', sub: 'Location A — 5-month urban building deployment, Aug 2025 to Jan 2026', color: '#7aab7e' },
+          { value: '88%', label: 'drop in track density at the same site', sub: 'Tracks per monitoring plate declined even at stations with residual activity', color: '#7aab7e' },
+          { value: '50%+', label: 'reduction at a second independent site', sub: 'Same 5-month period, different urban building profile', color: '#7aab7e' },
+        ].map(({ value, label, sub, color }) => (
+          <div class="bg-white border border-[#1c1814]/8 rounded-xl p-6">
+            <p class="text-5xl font-bold mb-3" style={`color:${color}`}>{value}</p>
+            <p class="text-base font-semibold text-[#1c1814] leading-snug mb-2">{label}</p>
+            <p class="text-base text-[#1c1814]/60 leading-relaxed">{sub}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-sm text-[#1c1814]/40 max-w-2xl">
+        Source: <a href="https://www.prnewswire.com/news-releases/senestech-reports-significant-reductions-in-rodent-activity-following-evolve-deployments-in-urban-field-studies-302691116.html" target="_blank" rel="noopener" class="underline underline-offset-2 hover:text-[#1c1814]/65 transition-colors">SenesTech, Inc. — February 18, 2026</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── WHO SHOULD USE EACH ── -->
+  <section class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <p class="text-[#c96a3a] text-sm font-semibold tracking-widest uppercase mb-4">
+        How to think about it
+      </p>
+      <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-12 max-w-2xl">
+        These are not competing programs. They solve different parts of the same problem.
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-[#f0ebe0] rounded-xl p-8">
+          <p class="text-base font-semibold text-[#1c1814] mb-4">Keep Assured Environments if:</p>
+          <ul class="space-y-3">
+            {[
+              'You need licensed PMP compliance documentation for DOHMH',
+              'You have an active infestation requiring immediate knockdown',
+              'Your lease or property management requires a named pest control contractor',
+              'You need exclusion and structural work assessed by an experienced team',
+            ].map((item) => (
+              <li class="flex items-start gap-3">
+                <div class="w-1.5 h-1.5 rounded-full bg-[#7aab7e] flex-shrink-0 mt-2"></div>
+                <p class="text-base text-[#1c1814]/65">{item}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="bg-[#f0ebe0] rounded-xl p-8">
+          <p class="text-base font-semibold text-[#1c1814] mb-4">Add Cloakd on top if:</p>
+          <ul class="space-y-3">
+            {[
+              'You have a recurring violation despite consistent treatment — the cycle keeps resetting',
+              'You need a documented 90-day declining trend to show a DOHMH inspector',
+              'You\'ve been cited for 04K or 04L and need more than a service receipt for re-inspection',
+              'Your current program handles the colony but not the replacement population',
+            ].map((item) => (
+              <li class="flex items-start gap-3">
+                <div class="w-1.5 h-1.5 rounded-full bg-[#c96a3a]/50 flex-shrink-0 mt-2"></div>
+                <p class="text-base text-[#1c1814]/65">{item}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────────────────────────────── CTA ── -->
+  <section class="py-24 px-6 bg-[#f0ebe0]">
+    <div class="max-w-6xl mx-auto">
+      <div class="max-w-2xl">
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#1c1814] leading-tight mb-6">
+          Your current exterminator stays. The fertility layer goes on top.
+        </h2>
+        <p class="text-lg text-[#1c1814]/65 leading-relaxed mb-8">
+          Tell us who handles your current pest control and what the
+          recurring problem looks like. We'll outline what the 90-day
+          program adds and what the monitoring record will document.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/get-started"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-semibold rounded bg-[#b85530] text-[#faf8f4] hover:bg-[#c96a3a] transition-colors"
+          >
+            Start the 90-day program
+          </a>
+          <a
+            href="/how-it-works"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            How it works
+          </a>
+          <a
+            href="/results"
+            class="inline-flex items-center justify-center px-7 py-4 text-base font-medium rounded border border-[#1c1814]/15 text-[#1c1814]/70 hover:text-[#1c1814] hover:border-[#1c1814]/25 transition-colors"
+          >
+            Field data
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Base>
