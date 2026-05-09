@@ -48,8 +48,13 @@ body {
   background-color: #faf8f4;
   color: #1c1814;
   font-family: 'Cabinet Grotesk', 'Satoshi', system-ui, sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.03em;
+  line-height: 1.08;
 }
 
 :focus-visible {
